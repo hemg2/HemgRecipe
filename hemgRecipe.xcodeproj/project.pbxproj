@@ -14,6 +14,13 @@
 		63021EC02929DD0100B8AB26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021EBE2929DD0100B8AB26 /* LaunchScreen.storyboard */; };
 		63021EC92929E25300B8AB26 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021EC82929E25300B8AB26 /* MainCollectionViewCell.swift */; };
 		63021ECB2929E27100B8AB26 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021ECA2929E27100B8AB26 /* MainViewController.swift */; };
+		63021ECE292A108700B8AB26 /* SoupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021ECD292A108700B8AB26 /* SoupViewController.swift */; };
+		63021ED0292A109B00B8AB26 /* Soup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021ECF292A109B00B8AB26 /* Soup.storyboard */; };
+		63021ED3292A11F700B8AB26 /* SteamedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021ED2292A11F700B8AB26 /* SteamedViewController.swift */; };
+		63021ED5292A120200B8AB26 /* Steamed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021ED4292A120200B8AB26 /* Steamed.storyboard */; };
+		63021ED8292A156A00B8AB26 /* SoupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021ED7292A156A00B8AB26 /* SoupTableViewCell.swift */; };
+		63021EDA292A157D00B8AB26 /* SecondSoupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021ED9292A157D00B8AB26 /* SecondSoupTableViewCell.swift */; };
+		63021EDD292A228C00B8AB26 /* KimchiStewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021EDC292A228C00B8AB26 /* KimchiStewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		63021EC12929DD0100B8AB26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63021EC82929E25300B8AB26 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		63021ECA2929E27100B8AB26 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		63021ECD292A108700B8AB26 /* SoupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoupViewController.swift; sourceTree = "<group>"; };
+		63021ECF292A109B00B8AB26 /* Soup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Soup.storyboard; sourceTree = "<group>"; };
+		63021ED2292A11F700B8AB26 /* SteamedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteamedViewController.swift; sourceTree = "<group>"; };
+		63021ED4292A120200B8AB26 /* Steamed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Steamed.storyboard; sourceTree = "<group>"; };
+		63021ED7292A156A00B8AB26 /* SoupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoupTableViewCell.swift; sourceTree = "<group>"; };
+		63021ED9292A157D00B8AB26 /* SecondSoupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSoupTableViewCell.swift; sourceTree = "<group>"; };
+		63021EDC292A228C00B8AB26 /* KimchiStewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KimchiStewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +75,6 @@
 				63021EC72929E23300B8AB26 /* MainView */,
 				63021EB32929DCFF00B8AB26 /* AppDelegate.swift */,
 				63021EB52929DCFF00B8AB26 /* SceneDelegate.swift */,
-				63021EB92929DCFF00B8AB26 /* Main.storyboard */,
 				63021EBC2929DD0100B8AB26 /* Assets.xcassets */,
 				63021EBE2929DD0100B8AB26 /* LaunchScreen.storyboard */,
 				63021EC12929DD0100B8AB26 /* Info.plist */,
@@ -74,8 +87,49 @@
 			children = (
 				63021EC82929E25300B8AB26 /* MainCollectionViewCell.swift */,
 				63021ECA2929E27100B8AB26 /* MainViewController.swift */,
+				63021EB92929DCFF00B8AB26 /* Main.storyboard */,
+				63021ED1292A11A500B8AB26 /* Steamed */,
+				63021ECC292A107000B8AB26 /* Soup */,
 			);
 			path = MainView;
+			sourceTree = "<group>";
+		};
+		63021ECC292A107000B8AB26 /* Soup */ = {
+			isa = PBXGroup;
+			children = (
+				63021EDB292A225700B8AB26 /* KimchiStew */,
+				63021ED6292A154A00B8AB26 /* SoupCell */,
+				63021ECD292A108700B8AB26 /* SoupViewController.swift */,
+				63021ECF292A109B00B8AB26 /* Soup.storyboard */,
+			);
+			path = Soup;
+			sourceTree = "<group>";
+		};
+		63021ED1292A11A500B8AB26 /* Steamed */ = {
+			isa = PBXGroup;
+			children = (
+				63021ED2292A11F700B8AB26 /* SteamedViewController.swift */,
+				63021ED4292A120200B8AB26 /* Steamed.storyboard */,
+			);
+			name = Steamed;
+			path = "찜";
+			sourceTree = "<group>";
+		};
+		63021ED6292A154A00B8AB26 /* SoupCell */ = {
+			isa = PBXGroup;
+			children = (
+				63021ED7292A156A00B8AB26 /* SoupTableViewCell.swift */,
+				63021ED9292A157D00B8AB26 /* SecondSoupTableViewCell.swift */,
+			);
+			path = SoupCell;
+			sourceTree = "<group>";
+		};
+		63021EDB292A225700B8AB26 /* KimchiStew */ = {
+			isa = PBXGroup;
+			children = (
+				63021EDC292A228C00B8AB26 /* KimchiStewViewController.swift */,
+			);
+			path = KimchiStew;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +191,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				63021EC02929DD0100B8AB26 /* LaunchScreen.storyboard in Resources */,
+				63021ED0292A109B00B8AB26 /* Soup.storyboard in Resources */,
 				63021EBD2929DD0100B8AB26 /* Assets.xcassets in Resources */,
+				63021ED5292A120200B8AB26 /* Steamed.storyboard in Resources */,
 				63021EBB2929DCFF00B8AB26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,9 +205,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63021ED8292A156A00B8AB26 /* SoupTableViewCell.swift in Sources */,
+				63021EDD292A228C00B8AB26 /* KimchiStewViewController.swift in Sources */,
+				63021ED3292A11F700B8AB26 /* SteamedViewController.swift in Sources */,
 				63021EB42929DCFF00B8AB26 /* AppDelegate.swift in Sources */,
 				63021EB62929DCFF00B8AB26 /* SceneDelegate.swift in Sources */,
+				63021ECE292A108700B8AB26 /* SoupViewController.swift in Sources */,
 				63021EC92929E25300B8AB26 /* MainCollectionViewCell.swift in Sources */,
+				63021EDA292A157D00B8AB26 /* SecondSoupTableViewCell.swift in Sources */,
 				63021ECB2929E27100B8AB26 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

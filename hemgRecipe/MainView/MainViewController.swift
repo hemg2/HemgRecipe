@@ -32,10 +32,21 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? MainCollectionViewCell else { fatalError() }
         
-//        cell.backgroundColor = .green
         cell.titleLabel.text = list[indexPath.row]
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        if indexPath.row == 0 {
+            let view = SoupViewController()
+            navigationController?.pushViewController(view, animated: true)
+        }
+        if indexPath.row == 1 {
+            let view = SteamedViewController()
+            navigationController?.pushViewController(view, animated: true)
+        }
     }
 }
 
