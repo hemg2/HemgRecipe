@@ -28,7 +28,7 @@ extension KimchiStewViewController: UITableViewDataSource, UITableViewDelegate {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! FirstExplanationCell
             cell.titleImage.image = UIImage(named: "김치1")
-            cell.textView.text = "재료 1번"
+            cell.textView.text = "두부, 김치, 대파 한입 크기 썰기 "
             return cell
         } else if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! FirstExplanationCell

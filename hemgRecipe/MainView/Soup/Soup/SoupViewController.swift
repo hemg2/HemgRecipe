@@ -43,7 +43,7 @@ extension SoupViewController: UITableViewDataSource, UITableViewDelegate {
         } else if indexPath.row == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SoupTableViewCell") as! SoupTableViewCell
             cell.titleLabel.text = "순두부찌개"
-            cell.titleIamge.image = UIImage(named: "된장찌개")
+            cell.titleIamge.image = UIImage(named: "순두부5")
             cell.accessoryType = .disclosureIndicator
             return cell
         } else if indexPath.row == 3 {
