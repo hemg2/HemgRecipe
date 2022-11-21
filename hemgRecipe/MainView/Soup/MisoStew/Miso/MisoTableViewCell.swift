@@ -1,5 +1,5 @@
 //
-//  FisrExplanationCell.swift
+//  MisoTableViewCell.swift
 //  hemgRecipe
 //
 //  Created by 1 on 2022/11/21.
@@ -7,8 +7,12 @@
 
 import UIKit
 
-class MisoCell: UITableViewCell {
-
+class MisoTableViewCell: UITableViewCell {
+    
+    
+    @IBOutlet weak var misoImageView: UIImageView!
+    @IBOutlet weak var misoTextView: UITextView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
