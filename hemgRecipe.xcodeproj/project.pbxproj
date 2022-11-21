@@ -25,6 +25,9 @@
 		63021EE4292B89BF00B8AB26 /* Miso.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021EE3292B89BF00B8AB26 /* Miso.storyboard */; };
 		63021EE7292BA41500B8AB26 /* FirstExplanationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021EE6292BA41500B8AB26 /* FirstExplanationCell.swift */; };
 		63021EF6292BC7CD00B8AB26 /* MisoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021EF5292BC7CD00B8AB26 /* MisoTableViewCell.swift */; };
+		63021EF9292BCE6000B8AB26 /* SoftTofuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021EF8292BCE6000B8AB26 /* SoftTofuTableViewCell.swift */; };
+		63021EFB292BCE7600B8AB26 /* SoftTofuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021EFA292BCE7600B8AB26 /* SoftTofuViewController.swift */; };
+		63021EFD292BCE8100B8AB26 /* SoftTofu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021EFC292BCE8100B8AB26 /* SoftTofu.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		63021EE3292B89BF00B8AB26 /* Miso.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Miso.storyboard; sourceTree = "<group>"; };
 		63021EE6292BA41500B8AB26 /* FirstExplanationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstExplanationCell.swift; sourceTree = "<group>"; };
 		63021EF5292BC7CD00B8AB26 /* MisoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisoTableViewCell.swift; sourceTree = "<group>"; };
+		63021EF8292BCE6000B8AB26 /* SoftTofuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftTofuTableViewCell.swift; sourceTree = "<group>"; };
+		63021EFA292BCE7600B8AB26 /* SoftTofuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftTofuViewController.swift; sourceTree = "<group>"; };
+		63021EFC292BCE8100B8AB26 /* SoftTofu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SoftTofu.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 		63021ECC292A107000B8AB26 /* Soup */ = {
 			isa = PBXGroup;
 			children = (
+				63021EF7292BCE4700B8AB26 /* SoftTofu */,
 				63021EEC292BAB7500B8AB26 /* Miso */,
 				63021EDB292A225700B8AB26 /* KimchiStew */,
 				63021ED6292A154A00B8AB26 /* Soup */,
@@ -150,6 +157,16 @@
 				63021EE3292B89BF00B8AB26 /* Miso.storyboard */,
 			);
 			path = Miso;
+			sourceTree = "<group>";
+		};
+		63021EF7292BCE4700B8AB26 /* SoftTofu */ = {
+			isa = PBXGroup;
+			children = (
+				63021EF8292BCE6000B8AB26 /* SoftTofuTableViewCell.swift */,
+				63021EFA292BCE7600B8AB26 /* SoftTofuViewController.swift */,
+				63021EFC292BCE8100B8AB26 /* SoftTofu.storyboard */,
+			);
+			path = SoftTofu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +231,7 @@
 				63021ED0292A109B00B8AB26 /* Soup.storyboard in Resources */,
 				63021EBD2929DD0100B8AB26 /* Assets.xcassets in Resources */,
 				63021EE2292B889A00B8AB26 /* Kimchi.storyboard in Resources */,
+				63021EFD292BCE8100B8AB26 /* SoftTofu.storyboard in Resources */,
 				63021ED5292A120200B8AB26 /* Steamed.storyboard in Resources */,
 				63021EE4292B89BF00B8AB26 /* Miso.storyboard in Resources */,
 				63021EBB2929DCFF00B8AB26 /* Main.storyboard in Resources */,
@@ -228,12 +246,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				63021ED8292A156A00B8AB26 /* SoupTableViewCell.swift in Sources */,
+				63021EFB292BCE7600B8AB26 /* SoftTofuViewController.swift in Sources */,
 				63021EDD292A228C00B8AB26 /* KimchiStewViewController.swift in Sources */,
 				63021EF6292BC7CD00B8AB26 /* MisoTableViewCell.swift in Sources */,
 				63021ED3292A11F700B8AB26 /* SteamedViewController.swift in Sources */,
 				63021EE7292BA41500B8AB26 /* FirstExplanationCell.swift in Sources */,
 				63021EB42929DCFF00B8AB26 /* AppDelegate.swift in Sources */,
 				63021EB62929DCFF00B8AB26 /* SceneDelegate.swift in Sources */,
+				63021EF9292BCE6000B8AB26 /* SoftTofuTableViewCell.swift in Sources */,
 				63021EE0292B861300B8AB26 /* MisoStewViewController.swift in Sources */,
 				63021ECE292A108700B8AB26 /* SoupViewController.swift in Sources */,
 				63021EC92929E25300B8AB26 /* MainCollectionViewCell.swift in Sources */,
