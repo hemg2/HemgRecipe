@@ -42,16 +42,16 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
         if indexPath.row == 0 {
             let storyboacrd = UIStoryboard.init(name: "Soup", bundle: nil)
             let popUpVC = storyboacrd.instantiateViewController(withIdentifier: "Soup") as! SoupViewController
-            popUpVC.modalPresentationStyle = .overCurrentContext
-            popUpVC.modalTransitionStyle = .crossDissolve
-            self.navigationController?.pushViewController(popUpVC, animated: true)
+//            popUpVC.modalPresentationStyle = .overCurrentContext
+//            popUpVC.modalTransitionStyle = .crossDissolve
+            navigationController?.pushViewController(popUpVC, animated: true)
         }
         if indexPath.row == 1 {
             let storyboacrd = UIStoryboard.init(name: "Steamed", bundle: nil)
             let popUpVC = storyboacrd.instantiateViewController(withIdentifier: "Steamed") as! SteamedViewController
-            popUpVC.modalPresentationStyle = .overCurrentContext
-            popUpVC.modalTransitionStyle = .crossDissolve
-            self.navigationController?.pushViewController(popUpVC, animated: true)
+//            popUpVC.modalPresentationStyle = .overCurrentContext
+//            popUpVC.modalTransitionStyle = .crossDissolve
+            navigationController?.pushViewController(popUpVC, animated: true)
         }
     }
 }

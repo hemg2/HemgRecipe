@@ -1,17 +1,17 @@
 //
-//  KimchiStewViewController.swift
+//  MisoStewViewController.swift
 //  hemgRecipe
 //
-//  Created by 1 on 2022/11/20.
+//  Created by 1 on 2022/11/21.
 //
 
 import UIKit
 
-class KimchiStewViewController: UIViewController {
+class MisoStewViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "김치찌개"
+        title = "된장찌개"
 
         // Do any additional setup after loading the view.
     }

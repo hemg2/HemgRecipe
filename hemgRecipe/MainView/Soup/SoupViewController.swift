@@ -14,9 +14,7 @@ class SoupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        tableView.register(SoupTableViewCell.self, forCellReuseIdentifier: "SoupTableViewCell")
-        //        tableView.register(SecondSoupTableViewCell.self, forCellReuseIdentifier: "SecondSoupTableViewCell")
-        view.backgroundColor = .systemBackground
+    title = "찌개류"
     }
 }
 
@@ -46,11 +44,17 @@ extension SoupViewController: UITableViewDataSource {
         return UITableViewCell()
     }
     
-    //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    //        tableView.deselectRow(at: indexPath, animated: true)
-    //        if indexPath.section == 0 {
-    //            let view =
-    //            self.navigationController?.pushViewController(view, animated: true)
-    //        }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        tableView.deselectRow(at: indexPath, animated: true)
+        if indexPath.row == 1 {
+            let storyboacrd = UIStoryboard.init(name: "Kimchi", bundle: nil)
+            let popUpVC = storyboacrd.instantiateViewController(withIdentifier: "Kimchi") as! KimchiStewViewController
+            navigationController?.pushViewController(popUpVC, animated: true)
+        }
+       else if indexPath.section == 2 {
+            let storyboacrd1 = UIStoryboard.init(name: "Miso", bundle: nil)
+            let popUpVC1 = storyboacrd1.instantiateViewController(withIdentifier: "Miso") as! MisoStewViewController
+            navigationController?.pushViewController(popUpVC1, animated: true)
+        }
+    }
 }
