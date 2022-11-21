@@ -11,6 +11,7 @@ class SoupTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var titleIamge: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

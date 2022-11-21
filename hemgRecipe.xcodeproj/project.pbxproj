@@ -19,14 +19,12 @@
 		63021ED3292A11F700B8AB26 /* SteamedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021ED2292A11F700B8AB26 /* SteamedViewController.swift */; };
 		63021ED5292A120200B8AB26 /* Steamed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021ED4292A120200B8AB26 /* Steamed.storyboard */; };
 		63021ED8292A156A00B8AB26 /* SoupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021ED7292A156A00B8AB26 /* SoupTableViewCell.swift */; };
-		63021EDA292A157D00B8AB26 /* SecondSoupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021ED9292A157D00B8AB26 /* SecondSoupTableViewCell.swift */; };
 		63021EDD292A228C00B8AB26 /* KimchiStewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021EDC292A228C00B8AB26 /* KimchiStewViewController.swift */; };
 		63021EE0292B861300B8AB26 /* MisoStewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021EDF292B861300B8AB26 /* MisoStewViewController.swift */; };
 		63021EE2292B889A00B8AB26 /* Kimchi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021EE1292B889A00B8AB26 /* Kimchi.storyboard */; };
 		63021EE4292B89BF00B8AB26 /* Miso.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021EE3292B89BF00B8AB26 /* Miso.storyboard */; };
 		63021EE7292BA41500B8AB26 /* FirstExplanationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021EE6292BA41500B8AB26 /* FirstExplanationCell.swift */; };
-		63021EE9292BA43700B8AB26 /* SecondExplanationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021EE8292BA43700B8AB26 /* SecondExplanationCell.swift */; };
-		63021EEB292BA48400B8AB26 /* ThreeExplanationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021EEA292BA48400B8AB26 /* ThreeExplanationCell.swift */; };
+		63021EEE292BAB8500B8AB26 /* MisoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021EED292BAB8500B8AB26 /* MisoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,14 +42,12 @@
 		63021ED2292A11F700B8AB26 /* SteamedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteamedViewController.swift; sourceTree = "<group>"; };
 		63021ED4292A120200B8AB26 /* Steamed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Steamed.storyboard; sourceTree = "<group>"; };
 		63021ED7292A156A00B8AB26 /* SoupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoupTableViewCell.swift; sourceTree = "<group>"; };
-		63021ED9292A157D00B8AB26 /* SecondSoupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSoupTableViewCell.swift; sourceTree = "<group>"; };
 		63021EDC292A228C00B8AB26 /* KimchiStewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KimchiStewViewController.swift; sourceTree = "<group>"; };
 		63021EDF292B861300B8AB26 /* MisoStewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisoStewViewController.swift; sourceTree = "<group>"; };
 		63021EE1292B889A00B8AB26 /* Kimchi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Kimchi.storyboard; sourceTree = "<group>"; };
 		63021EE3292B89BF00B8AB26 /* Miso.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Miso.storyboard; sourceTree = "<group>"; };
 		63021EE6292BA41500B8AB26 /* FirstExplanationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstExplanationCell.swift; sourceTree = "<group>"; };
-		63021EE8292BA43700B8AB26 /* SecondExplanationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondExplanationCell.swift; sourceTree = "<group>"; };
-		63021EEA292BA48400B8AB26 /* ThreeExplanationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeExplanationCell.swift; sourceTree = "<group>"; };
+		63021EED292BAB8500B8AB26 /* MisoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +107,7 @@
 			children = (
 				63021EDE292B85B900B8AB26 /* MisoStew */,
 				63021EDB292A225700B8AB26 /* KimchiStew */,
-				63021ED6292A154A00B8AB26 /* SoupCell */,
-				63021ECD292A108700B8AB26 /* SoupViewController.swift */,
-				63021ECF292A109B00B8AB26 /* Soup.storyboard */,
+				63021ED6292A154A00B8AB26 /* Soup */,
 			);
 			path = Soup;
 			sourceTree = "<group>";
@@ -128,19 +122,20 @@
 			path = "찜";
 			sourceTree = "<group>";
 		};
-		63021ED6292A154A00B8AB26 /* SoupCell */ = {
+		63021ED6292A154A00B8AB26 /* Soup */ = {
 			isa = PBXGroup;
 			children = (
+				63021ECD292A108700B8AB26 /* SoupViewController.swift */,
 				63021ED7292A156A00B8AB26 /* SoupTableViewCell.swift */,
-				63021ED9292A157D00B8AB26 /* SecondSoupTableViewCell.swift */,
+				63021ECF292A109B00B8AB26 /* Soup.storyboard */,
 			);
-			path = SoupCell;
+			path = Soup;
 			sourceTree = "<group>";
 		};
 		63021EDB292A225700B8AB26 /* KimchiStew */ = {
 			isa = PBXGroup;
 			children = (
-				63021EE5292BA3D500B8AB26 /* ExplanationCell */,
+				63021EE6292BA41500B8AB26 /* FirstExplanationCell.swift */,
 				63021EDC292A228C00B8AB26 /* KimchiStewViewController.swift */,
 				63021EE1292B889A00B8AB26 /* Kimchi.storyboard */,
 			);
@@ -150,20 +145,19 @@
 		63021EDE292B85B900B8AB26 /* MisoStew */ = {
 			isa = PBXGroup;
 			children = (
-				63021EDF292B861300B8AB26 /* MisoStewViewController.swift */,
-				63021EE3292B89BF00B8AB26 /* Miso.storyboard */,
+				63021EEC292BAB7500B8AB26 /* Miso */,
 			);
 			path = MisoStew;
 			sourceTree = "<group>";
 		};
-		63021EE5292BA3D500B8AB26 /* ExplanationCell */ = {
+		63021EEC292BAB7500B8AB26 /* Miso */ = {
 			isa = PBXGroup;
 			children = (
-				63021EE6292BA41500B8AB26 /* FirstExplanationCell.swift */,
-				63021EE8292BA43700B8AB26 /* SecondExplanationCell.swift */,
-				63021EEA292BA48400B8AB26 /* ThreeExplanationCell.swift */,
+				63021EED292BAB8500B8AB26 /* MisoCell.swift */,
+				63021EDF292B861300B8AB26 /* MisoStewViewController.swift */,
+				63021EE3292B89BF00B8AB26 /* Miso.storyboard */,
 			);
-			path = ExplanationCell;
+			path = Miso;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +244,7 @@
 				63021EE0292B861300B8AB26 /* MisoStewViewController.swift in Sources */,
 				63021ECE292A108700B8AB26 /* SoupViewController.swift in Sources */,
 				63021EC92929E25300B8AB26 /* MainCollectionViewCell.swift in Sources */,
-				63021EEB292BA48400B8AB26 /* ThreeExplanationCell.swift in Sources */,
-				63021EE9292BA43700B8AB26 /* SecondExplanationCell.swift in Sources */,
-				63021EDA292A157D00B8AB26 /* SecondSoupTableViewCell.swift in Sources */,
+				63021EEE292BAB8500B8AB26 /* MisoCell.swift in Sources */,
 				63021ECB2929E27100B8AB26 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

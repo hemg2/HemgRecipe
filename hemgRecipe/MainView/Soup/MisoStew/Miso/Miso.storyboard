@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Miso Stew View Controller-->
+        <scene sceneID="TZa-oe-vt5">
+            <objects>
+                <viewController storyboardIdentifier="Miso" id="gul-qd-UEs" customClass="MisoStewViewController" customModule="hemgRecipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WW5-Z4-WlP">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fVZ-DR-6ga">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ceel" rowHeight="80" id="zgf-2u-Rwo" customClass="MisoCell" customModule="hemgRecipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zgf-2u-Rwo" id="Q5b-2x-9Zc">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="된장1" translatesAutoresizingMaskIntoConstraints="NO" id="ibx-Yh-JKi">
+                                                    <rect key="frame" x="5" y="5" width="120" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="F9l-NH-GWU"/>
+                                                        <constraint firstAttribute="height" constant="70" id="SLh-Jp-f7i"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="김치와 무 는 속기 좋은 크기로 자른다.  양파와 애호박, 두부는 깍뚝 썰고 대파와 홍고추는 송송 썰어준다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Gj-yN-2VV">
+                                                    <rect key="frame" x="130" y="5" width="240" height="70"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="240" id="YHa-A4-8t8"/>
+                                                        <constraint firstAttribute="height" constant="70" id="eJI-zD-QSo"/>
+                                                    </constraints>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="ibx-Yh-JKi" secondAttribute="bottom" constant="5" id="2vL-yD-en3"/>
+                                                <constraint firstItem="ibx-Yh-JKi" firstAttribute="top" secondItem="Q5b-2x-9Zc" secondAttribute="top" constant="5" id="BfG-i3-nDB"/>
+                                                <constraint firstItem="6Gj-yN-2VV" firstAttribute="top" secondItem="ibx-Yh-JKi" secondAttribute="top" id="JDR-za-iWE"/>
+                                                <constraint firstItem="ibx-Yh-JKi" firstAttribute="leading" secondItem="Q5b-2x-9Zc" secondAttribute="leading" constant="5" id="Mjn-xr-Yz0"/>
+                                                <constraint firstItem="6Gj-yN-2VV" firstAttribute="bottom" secondItem="ibx-Yh-JKi" secondAttribute="bottom" id="QVv-5e-JCF"/>
+                                                <constraint firstItem="6Gj-yN-2VV" firstAttribute="leading" secondItem="ibx-Yh-JKi" secondAttribute="trailing" constant="5" id="TKU-Oz-9Zn"/>
+                                                <constraint firstItem="ibx-Yh-JKi" firstAttribute="centerY" secondItem="Q5b-2x-9Zc" secondAttribute="centerY" id="haP-ba-JVy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ceel2" rowHeight="80" id="FLN-fK-rNu">
+                                        <rect key="frame" x="0.0" y="130" width="390" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FLN-fK-rNu" id="mxD-hL-vR8">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="된장2" translatesAutoresizingMaskIntoConstraints="NO" id="OfH-C9-4Su">
+                                                    <rect key="frame" x="5" y="5" width="120" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="cKz-2i-YFU"/>
+                                                        <constraint firstAttribute="width" constant="120" id="ezi-vE-8Hp"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="냄비에 약간의 참기름을 두른후 김치와 김칫국물을 넣어 볶으며 김치가 투명해지면 물과 무를 넣고 끓여준다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vgG-Sw-Flj">
+                                                    <rect key="frame" x="130" y="5" width="240" height="70"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="6jo-a7-1KJ"/>
+                                                        <constraint firstAttribute="width" constant="240" id="yKs-Xc-oZO"/>
+                                                    </constraints>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="OfH-C9-4Su" secondAttribute="bottom" constant="5" id="6EP-EH-FRo"/>
+                                                <constraint firstItem="OfH-C9-4Su" firstAttribute="leading" secondItem="mxD-hL-vR8" secondAttribute="leading" constant="5" id="BKR-gP-WEj"/>
+                                                <constraint firstItem="OfH-C9-4Su" firstAttribute="top" secondItem="mxD-hL-vR8" secondAttribute="top" constant="5" id="Ez1-4D-Hsf"/>
+                                                <constraint firstItem="vgG-Sw-Flj" firstAttribute="leading" secondItem="OfH-C9-4Su" secondAttribute="trailing" constant="5" id="ZYD-Rq-uox"/>
+                                                <constraint firstItem="vgG-Sw-Flj" firstAttribute="bottom" secondItem="OfH-C9-4Su" secondAttribute="bottom" id="bhE-mG-W1V"/>
+                                                <constraint firstItem="vgG-Sw-Flj" firstAttribute="top" secondItem="OfH-C9-4Su" secondAttribute="top" id="t54-2I-LPw"/>
+                                                <constraint firstItem="OfH-C9-4Su" firstAttribute="centerY" secondItem="mxD-hL-vR8" secondAttribute="centerY" id="xw3-yB-fvC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell3" rowHeight="80" id="bcn-px-PW1">
+                                        <rect key="frame" x="0.0" y="210" width="390" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bcn-px-PW1" id="gGu-XE-Z9E">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="된장3" translatesAutoresizingMaskIntoConstraints="NO" id="PR7-j1-utN">
+                                                    <rect key="frame" x="5" y="5" width="120" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="1sX-rb-8Ll"/>
+                                                        <constraint firstAttribute="height" constant="70" id="tnR-3c-fBv"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="무가 반쯤 익으면 애호박과 양파를 넣고 1분정도 끓여준다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Psn-Xz-COD">
+                                                    <rect key="frame" x="130" y="5" width="240" height="70"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="240" id="HhK-fA-0Bx"/>
+                                                        <constraint firstAttribute="height" constant="70" id="QoU-k4-ddf"/>
+                                                    </constraints>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="PR7-j1-utN" firstAttribute="top" secondItem="gGu-XE-Z9E" secondAttribute="top" constant="5" id="I9O-77-aIg"/>
+                                                <constraint firstAttribute="bottom" secondItem="PR7-j1-utN" secondAttribute="bottom" constant="5" id="Pd5-ds-NbE"/>
+                                                <constraint firstItem="Psn-Xz-COD" firstAttribute="leading" secondItem="PR7-j1-utN" secondAttribute="trailing" constant="5" id="Zfd-zW-nQ8"/>
+                                                <constraint firstItem="Psn-Xz-COD" firstAttribute="bottom" secondItem="PR7-j1-utN" secondAttribute="bottom" id="bUT-7E-gfj"/>
+                                                <constraint firstItem="PR7-j1-utN" firstAttribute="leading" secondItem="gGu-XE-Z9E" secondAttribute="leading" constant="5" id="bdN-bF-LDb"/>
+                                                <constraint firstItem="PR7-j1-utN" firstAttribute="centerY" secondItem="gGu-XE-Z9E" secondAttribute="centerY" id="dBU-Yr-z6a"/>
+                                                <constraint firstItem="Psn-Xz-COD" firstAttribute="top" secondItem="PR7-j1-utN" secondAttribute="top" id="pXG-rn-OvR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell4" rowHeight="80" id="wf6-HO-m3N">
+                                        <rect key="frame" x="0.0" y="290" width="390" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wf6-HO-m3N" id="Usd-HP-I24">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="된장4" translatesAutoresizingMaskIntoConstraints="NO" id="cfV-RN-ozf">
+                                                    <rect key="frame" x="5" y="5" width="120" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="ZU7-OY-p4d"/>
+                                                        <constraint firstAttribute="width" constant="120" id="hPx-Oi-giV"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="두부를 넣고 2분 정도 끓여준다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Mg-T6-AUN">
+                                                    <rect key="frame" x="130" y="5" width="240" height="70"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="240" id="arQ-gM-CFk"/>
+                                                        <constraint firstAttribute="height" constant="70" id="fL5-J7-QGs"/>
+                                                    </constraints>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cfV-RN-ozf" firstAttribute="centerY" secondItem="Usd-HP-I24" secondAttribute="centerY" id="3J2-8S-EQg"/>
+                                                <constraint firstItem="1Mg-T6-AUN" firstAttribute="bottom" secondItem="cfV-RN-ozf" secondAttribute="bottom" id="3um-oB-pmL"/>
+                                                <constraint firstItem="1Mg-T6-AUN" firstAttribute="top" secondItem="cfV-RN-ozf" secondAttribute="top" id="ljW-08-7fk"/>
+                                                <constraint firstItem="cfV-RN-ozf" firstAttribute="leading" secondItem="Usd-HP-I24" secondAttribute="leading" constant="5" id="ltX-3e-TAQ"/>
+                                                <constraint firstItem="1Mg-T6-AUN" firstAttribute="leading" secondItem="cfV-RN-ozf" secondAttribute="trailing" constant="5" id="ujF-P3-bcq"/>
+                                                <constraint firstAttribute="bottom" secondItem="cfV-RN-ozf" secondAttribute="bottom" constant="5" id="ygN-sq-yL1"/>
+                                                <constraint firstItem="cfV-RN-ozf" firstAttribute="top" secondItem="Usd-HP-I24" secondAttribute="top" constant="5" id="yom-1x-3Yi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell5" rowHeight="80" id="H9J-4W-qyt">
+                                        <rect key="frame" x="0.0" y="370" width="390" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H9J-4W-qyt" id="iPV-3l-Bpm">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="된장5" translatesAutoresizingMaskIntoConstraints="NO" id="Nfj-fK-0om">
+                                                    <rect key="frame" x="5" y="5" width="120" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="6aQ-fc-cQ1"/>
+                                                        <constraint firstAttribute="height" constant="70" id="9PC-iJ-P01"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="마지막에 홍고추와 대파를 넣고 1분 더 끓여 완성한다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jz7-b7-CJM">
+                                                    <rect key="frame" x="130" y="5" width="240" height="70"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="240" id="RKx-Ag-znq"/>
+                                                        <constraint firstAttribute="height" constant="70" id="n1r-E0-9FP"/>
+                                                    </constraints>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Jz7-b7-CJM" firstAttribute="bottom" secondItem="Nfj-fK-0om" secondAttribute="bottom" id="7nV-wu-QVo"/>
+                                                <constraint firstItem="Nfj-fK-0om" firstAttribute="leading" secondItem="iPV-3l-Bpm" secondAttribute="leading" constant="5" id="F8B-64-XWw"/>
+                                                <constraint firstAttribute="bottom" secondItem="Nfj-fK-0om" secondAttribute="bottom" constant="5" id="INX-3b-eWl"/>
+                                                <constraint firstItem="Jz7-b7-CJM" firstAttribute="top" secondItem="Nfj-fK-0om" secondAttribute="top" id="MM3-3g-VIx"/>
+                                                <constraint firstItem="Nfj-fK-0om" firstAttribute="centerY" secondItem="iPV-3l-Bpm" secondAttribute="centerY" id="TCi-Sy-eOa"/>
+                                                <constraint firstItem="Jz7-b7-CJM" firstAttribute="leading" secondItem="Nfj-fK-0om" secondAttribute="trailing" constant="5" id="TGY-cZ-vcy"/>
+                                                <constraint firstItem="Nfj-fK-0om" firstAttribute="top" secondItem="iPV-3l-Bpm" secondAttribute="top" constant="5" id="xFU-gL-drl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="faQ-62-lmf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fVZ-DR-6ga" firstAttribute="top" secondItem="faQ-62-lmf" secondAttribute="top" id="Low-sd-pIZ"/>
+                            <constraint firstItem="faQ-62-lmf" firstAttribute="bottom" secondItem="fVZ-DR-6ga" secondAttribute="bottom" id="kJA-V2-oHj"/>
+                            <constraint firstItem="faQ-62-lmf" firstAttribute="trailing" secondItem="fVZ-DR-6ga" secondAttribute="trailing" id="rEX-MH-6k7"/>
+                            <constraint firstItem="fVZ-DR-6ga" firstAttribute="leading" secondItem="faQ-62-lmf" secondAttribute="leading" id="uL2-fx-ci1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ekO-8X-qh2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pth-X5-Pqk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4026.1538461538462" y="187.67772511848341"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="된장1" width="296" height="284"/>
+        <image name="된장2" width="294" height="292"/>
+        <image name="된장3" width="292" height="296"/>
+        <image name="된장4" width="296" height="288"/>
+        <image name="된장5" width="298" height="291"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -56,44 +56,10 @@
                                             <outlet property="titleLabel" destination="UKg-lD-RvZ" id="BRo-ws-XR8"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SecondSoupTableViewCell" rowHeight="80" id="gUj-PO-5Bs" customClass="SecondSoupTableViewCell" customModule="hemgRecipe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="130" width="390" height="80"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gUj-PO-5Bs" id="ZOY-I0-K6G">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="80"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z3O-xM-XwE">
-                                                    <rect key="frame" x="5" y="5" width="100" height="70"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="ZbE-Jq-sog"/>
-                                                        <constraint firstAttribute="height" constant="70" id="jtf-8r-Pf6"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5b-2p-9t7">
-                                                    <rect key="frame" x="110" y="29.666666666666671" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="H5b-2p-9t7" firstAttribute="centerY" secondItem="Z3O-xM-XwE" secondAttribute="centerY" id="0pR-dY-fxV"/>
-                                                <constraint firstItem="Z3O-xM-XwE" firstAttribute="centerY" secondItem="ZOY-I0-K6G" secondAttribute="centerY" id="3qp-K5-sZU"/>
-                                                <constraint firstAttribute="bottom" secondItem="Z3O-xM-XwE" secondAttribute="bottom" constant="5" id="QD4-wA-9Ol"/>
-                                                <constraint firstItem="H5b-2p-9t7" firstAttribute="leading" secondItem="Z3O-xM-XwE" secondAttribute="trailing" constant="5" id="YWD-jU-4S1"/>
-                                                <constraint firstItem="Z3O-xM-XwE" firstAttribute="top" secondItem="ZOY-I0-K6G" secondAttribute="top" constant="5" id="bG9-z6-Ozh"/>
-                                                <constraint firstItem="Z3O-xM-XwE" firstAttribute="leading" secondItem="ZOY-I0-K6G" secondAttribute="leading" constant="5" id="wKC-jg-zxw"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="titleIamge" destination="Z3O-xM-XwE" id="1aB-sf-Xrf"/>
-                                            <outlet property="titleLabel" destination="H5b-2p-9t7" id="IJE-xa-E6h"/>
-                                        </connections>
-                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="Y6W-OH-hqX" id="sgv-K7-qdp"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="RBF-wJ-mVP"/>
                                 </connections>
                             </tableView>
                         </subviews>
