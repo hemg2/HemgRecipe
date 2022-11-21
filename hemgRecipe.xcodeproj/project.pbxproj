@@ -105,7 +105,7 @@
 		63021ECC292A107000B8AB26 /* Soup */ = {
 			isa = PBXGroup;
 			children = (
-				63021EDE292B85B900B8AB26 /* MisoStew */,
+				63021EEC292BAB7500B8AB26 /* Miso */,
 				63021EDB292A225700B8AB26 /* KimchiStew */,
 				63021ED6292A154A00B8AB26 /* Soup */,
 			);
@@ -140,14 +140,6 @@
 				63021EE1292B889A00B8AB26 /* Kimchi.storyboard */,
 			);
 			path = KimchiStew;
-			sourceTree = "<group>";
-		};
-		63021EDE292B85B900B8AB26 /* MisoStew */ = {
-			isa = PBXGroup;
-			children = (
-				63021EEC292BAB7500B8AB26 /* Miso */,
-			);
-			path = MisoStew;
 			sourceTree = "<group>";
 		};
 		63021EEC292BAB7500B8AB26 /* Miso */ = {
