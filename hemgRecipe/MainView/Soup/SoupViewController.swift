@@ -29,16 +29,18 @@ extension SoupViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.section == 0 {
+        if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SoupTableViewCell") as! SoupTableViewCell
             cell.titleLabel.text = "김치찌개"
             cell.titleIamge.image = UIImage(named: "김치찌개")
+            cell.accessoryType = .disclosureIndicator
             return cell
             
-        } else if indexPath.section == 1{
+        } else if indexPath.row == 1{
             let cell1 = tableView.dequeueReusableCell(withIdentifier: "SecondSoupTableViewCell") as! SecondSoupTableViewCell
             cell1.titleLabel.text = "된장찌개"
             cell1.titleIamge.image = UIImage(named: "된장찌개")
+            cell1.accessoryType = .disclosureIndicator
             return cell1
         }
         return UITableViewCell()
