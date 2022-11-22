@@ -69,13 +69,6 @@ extension SoupViewController: UITableViewDataSource, UITableViewDelegate {
                 cell.accessoryType = .disclosureIndicator
                 return cell
             }
-//            else if indexPath.row == 2 {
-//                let cell = tableView.dequeueReusableCell(withIdentifier: "SoupTableViewCell") as! SoupTableViewCell
-//                cell.titleLabel.text = "쇠고기무국"
-//                cell.titleIamge.image = UIImage(named: "된장찌개")
-//                cell.accessoryType = .disclosureIndicator
-//                return cell
-//            }
         }
         
         if indexPath.section == 2 {
@@ -96,19 +89,19 @@ extension SoupViewController: UITableViewDataSource, UITableViewDelegate {
                 let storyboacrd = UIStoryboard.init(name: "Kimchi", bundle: nil)
                 let VC = storyboacrd.instantiateViewController(withIdentifier: "Kimchi") as! KimchiStewViewController
                 navigationController?.pushViewController(VC, animated: true)
-                print("1page") //색션은 타이틀 그룹 묶음용
+//                print("1page") //색션은 타이틀 그룹 묶음용
             }
             else if indexPath.row == 1 {
                 let storyboacrd1 = UIStoryboard.init(name: "Miso", bundle: nil)
                 let VC = storyboacrd1.instantiateViewController(withIdentifier: "Miso") as! MisoStewViewController
                 navigationController?.pushViewController(VC, animated: true)
-                print("2page")
+//                print("2page")
             }
             else if indexPath.row == 2 {
                 let storyboacrd1 = UIStoryboard.init(name: "SoftTofu", bundle: nil)
                 let VC = storyboacrd1.instantiateViewController(withIdentifier: "SoftTofu") as! SoftTofuViewController
                 navigationController?.pushViewController(VC, animated: true)
-                print("3page")
+//                print("3page")
             }
         }
         if indexPath.section == 1 {
@@ -120,11 +113,6 @@ extension SoupViewController: UITableViewDataSource, UITableViewDelegate {
             else if indexPath.row == 1 {
                 let storyboacrd1 = UIStoryboard.init(name: "BeanSprouts", bundle: nil)
                 let VC = storyboacrd1.instantiateViewController(withIdentifier: "BeanSprouts") as! BeanSproutsViewController
-                navigationController?.pushViewController(VC, animated: true)
-            }
-            else if indexPath.row == 2 {
-                let storyboacrd1 = UIStoryboard.init(name: "BeefRadish", bundle: nil)
-                let VC = storyboacrd1.instantiateViewController(withIdentifier: "BeefRadish") as! BeefRadishViewController
                 navigationController?.pushViewController(VC, animated: true)
             }
         }

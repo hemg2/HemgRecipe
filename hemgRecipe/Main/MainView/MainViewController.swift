@@ -45,11 +45,9 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
             navigationController?.pushViewController(popUpVC, animated: true)
             print("찌개")
         }
-        if indexPath.row == 1 {
+       else if indexPath.row == 1 {
             let storyboacrd = UIStoryboard.init(name: "Steamed", bundle: nil)
             let popUpVC = storyboacrd.instantiateViewController(withIdentifier: "Steamed") as! SteamedViewController
-//            popUpVC.modalPresentationStyle = .overCurrentContext
-//            popUpVC.modalTransitionStyle = .crossDissolve
             navigationController?.pushViewController(popUpVC, animated: true)
             print("찜")
         }

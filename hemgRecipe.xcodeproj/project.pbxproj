@@ -29,14 +29,12 @@
 		63021EFB292BCE7600B8AB26 /* SoftTofuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021EFA292BCE7600B8AB26 /* SoftTofuViewController.swift */; };
 		63021EFD292BCE8100B8AB26 /* SoftTofu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021EFC292BCE8100B8AB26 /* SoftTofu.storyboard */; };
 		63021F06292C8D5C00B8AB26 /* BeanSproutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F05292C8D5C00B8AB26 /* BeanSproutsViewController.swift */; };
-		63021F08292C8D8400B8AB26 /* BeefRadishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F07292C8D8400B8AB26 /* BeefRadishViewController.swift */; };
-		63021F0A292C8D8B00B8AB26 /* BeefRadish.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021F09292C8D8B00B8AB26 /* BeefRadish.storyboard */; };
 		63021F0C292C8D9900B8AB26 /* BeanSprouts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021F0B292C8D9900B8AB26 /* BeanSprouts.storyboard */; };
 		63021F0E292C8DB600B8AB26 /* SeaweedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F0D292C8DB600B8AB26 /* SeaweedTableViewCell.swift */; };
 		63021F10292C8E9400B8AB26 /* BeanSproutsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F0F292C8E9400B8AB26 /* BeanSproutsTableViewCell.swift */; };
-		63021F12292C8E9F00B8AB26 /* BeefRadishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F11292C8E9F00B8AB26 /* BeefRadishTableViewCell.swift */; };
 		63021F14292C8FB700B8AB26 /* Seaweed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021F13292C8FB700B8AB26 /* Seaweed.storyboard */; };
 		63021F16292C904900B8AB26 /* SeaweedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F15292C904900B8AB26 /* SeaweedViewController.swift */; };
+		63021F18292CA7D200B8AB26 /* SteamedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F17292CA7D200B8AB26 /* SteamedCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,14 +62,12 @@
 		63021EFA292BCE7600B8AB26 /* SoftTofuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftTofuViewController.swift; sourceTree = "<group>"; };
 		63021EFC292BCE8100B8AB26 /* SoftTofu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SoftTofu.storyboard; sourceTree = "<group>"; };
 		63021F05292C8D5C00B8AB26 /* BeanSproutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanSproutsViewController.swift; sourceTree = "<group>"; };
-		63021F07292C8D8400B8AB26 /* BeefRadishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeefRadishViewController.swift; sourceTree = "<group>"; };
-		63021F09292C8D8B00B8AB26 /* BeefRadish.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BeefRadish.storyboard; sourceTree = "<group>"; };
 		63021F0B292C8D9900B8AB26 /* BeanSprouts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BeanSprouts.storyboard; sourceTree = "<group>"; };
 		63021F0D292C8DB600B8AB26 /* SeaweedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaweedTableViewCell.swift; sourceTree = "<group>"; };
 		63021F0F292C8E9400B8AB26 /* BeanSproutsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanSproutsTableViewCell.swift; sourceTree = "<group>"; };
-		63021F11292C8E9F00B8AB26 /* BeefRadishTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeefRadishTableViewCell.swift; sourceTree = "<group>"; };
 		63021F13292C8FB700B8AB26 /* Seaweed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Seaweed.storyboard; sourceTree = "<group>"; };
 		63021F15292C904900B8AB26 /* SeaweedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaweedViewController.swift; sourceTree = "<group>"; };
+		63021F17292CA7D200B8AB26 /* SteamedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteamedCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +100,7 @@
 		63021EB22929DCFF00B8AB26 /* hemgRecipe */ = {
 			isa = PBXGroup;
 			children = (
-				63021EC72929E23300B8AB26 /* MainView */,
+				63021EC72929E23300B8AB26 /* Main */,
 				63021EB32929DCFF00B8AB26 /* AppDelegate.swift */,
 				63021EB52929DCFF00B8AB26 /* SceneDelegate.swift */,
 				63021EBC2929DD0100B8AB26 /* Assets.xcassets */,
@@ -114,28 +110,25 @@
 			path = hemgRecipe;
 			sourceTree = "<group>";
 		};
-		63021EC72929E23300B8AB26 /* MainView */ = {
+		63021EC72929E23300B8AB26 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				63021EC82929E25300B8AB26 /* MainCollectionViewCell.swift */,
-				63021ECA2929E27100B8AB26 /* MainViewController.swift */,
-				63021EB92929DCFF00B8AB26 /* Main.storyboard */,
+				63021F1A292CB0F600B8AB26 /* MainView */,
 				63021ED1292A11A500B8AB26 /* Steamed */,
 				63021ECC292A107000B8AB26 /* Soup */,
 			);
-			path = MainView;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		63021ECC292A107000B8AB26 /* Soup */ = {
 			isa = PBXGroup;
 			children = (
-				63021F00292C8CDD00B8AB26 /* BeefRadish */,
+				63021ED6292A154A00B8AB26 /* MianSoup */,
 				63021EFF292C8CBC00B8AB26 /* BeanSprouts */,
 				63021EFE292C8CA600B8AB26 /* BeefSeaweed */,
 				63021EF7292BCE4700B8AB26 /* SoftTofu */,
 				63021EEC292BAB7500B8AB26 /* Miso */,
 				63021EDB292A225700B8AB26 /* KimchiStew */,
-				63021ED6292A154A00B8AB26 /* Soup */,
 			);
 			path = Soup;
 			sourceTree = "<group>";
@@ -143,6 +136,7 @@
 		63021ED1292A11A500B8AB26 /* Steamed */ = {
 			isa = PBXGroup;
 			children = (
+				63021F17292CA7D200B8AB26 /* SteamedCollectionViewCell.swift */,
 				63021ED2292A11F700B8AB26 /* SteamedViewController.swift */,
 				63021ED4292A120200B8AB26 /* Steamed.storyboard */,
 			);
@@ -150,14 +144,14 @@
 			path = "찜";
 			sourceTree = "<group>";
 		};
-		63021ED6292A154A00B8AB26 /* Soup */ = {
+		63021ED6292A154A00B8AB26 /* MianSoup */ = {
 			isa = PBXGroup;
 			children = (
 				63021ECD292A108700B8AB26 /* SoupViewController.swift */,
 				63021ED7292A156A00B8AB26 /* SoupTableViewCell.swift */,
 				63021ECF292A109B00B8AB26 /* Soup.storyboard */,
 			);
-			path = Soup;
+			path = MianSoup;
 			sourceTree = "<group>";
 		};
 		63021EDB292A225700B8AB26 /* KimchiStew */ = {
@@ -210,14 +204,14 @@
 			path = BeanSprouts;
 			sourceTree = "<group>";
 		};
-		63021F00292C8CDD00B8AB26 /* BeefRadish */ = {
+		63021F1A292CB0F600B8AB26 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				63021F11292C8E9F00B8AB26 /* BeefRadishTableViewCell.swift */,
-				63021F07292C8D8400B8AB26 /* BeefRadishViewController.swift */,
-				63021F09292C8D8B00B8AB26 /* BeefRadish.storyboard */,
+				63021EC82929E25300B8AB26 /* MainCollectionViewCell.swift */,
+				63021ECA2929E27100B8AB26 /* MainViewController.swift */,
+				63021EB92929DCFF00B8AB26 /* Main.storyboard */,
 			);
-			path = BeefRadish;
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,7 +279,6 @@
 				63021EE2292B889A00B8AB26 /* Kimchi.storyboard in Resources */,
 				63021EFD292BCE8100B8AB26 /* SoftTofu.storyboard in Resources */,
 				63021ED5292A120200B8AB26 /* Steamed.storyboard in Resources */,
-				63021F0A292C8D8B00B8AB26 /* BeefRadish.storyboard in Resources */,
 				63021EE4292B89BF00B8AB26 /* Miso.storyboard in Resources */,
 				63021EBB2929DCFF00B8AB26 /* Main.storyboard in Resources */,
 				63021F0C292C8D9900B8AB26 /* BeanSprouts.storyboard in Resources */,
@@ -304,17 +297,16 @@
 				63021EFB292BCE7600B8AB26 /* SoftTofuViewController.swift in Sources */,
 				63021EDD292A228C00B8AB26 /* KimchiStewViewController.swift in Sources */,
 				63021EF6292BC7CD00B8AB26 /* MisoTableViewCell.swift in Sources */,
-				63021F08292C8D8400B8AB26 /* BeefRadishViewController.swift in Sources */,
 				63021ED3292A11F700B8AB26 /* SteamedViewController.swift in Sources */,
 				63021EE7292BA41500B8AB26 /* FirstExplanationCell.swift in Sources */,
 				63021F16292C904900B8AB26 /* SeaweedViewController.swift in Sources */,
+				63021F18292CA7D200B8AB26 /* SteamedCollectionViewCell.swift in Sources */,
 				63021EB42929DCFF00B8AB26 /* AppDelegate.swift in Sources */,
 				63021F0E292C8DB600B8AB26 /* SeaweedTableViewCell.swift in Sources */,
 				63021F06292C8D5C00B8AB26 /* BeanSproutsViewController.swift in Sources */,
 				63021EB62929DCFF00B8AB26 /* SceneDelegate.swift in Sources */,
 				63021EF9292BCE6000B8AB26 /* SoftTofuTableViewCell.swift in Sources */,
 				63021EE0292B861300B8AB26 /* MisoStewViewController.swift in Sources */,
-				63021F12292C8E9F00B8AB26 /* BeefRadishTableViewCell.swift in Sources */,
 				63021ECE292A108700B8AB26 /* SoupViewController.swift in Sources */,
 				63021EC92929E25300B8AB26 /* MainCollectionViewCell.swift in Sources */,
 				63021ECB2929E27100B8AB26 /* MainViewController.swift in Sources */,
