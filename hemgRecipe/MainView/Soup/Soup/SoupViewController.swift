@@ -24,8 +24,8 @@ extension SoupViewController: UITableViewDataSource, UITableViewDelegate {
         if section == 0 {
             return 3
         } else if section == 1 {
-            return 3
-        } else if section == 2{
+            return 2
+        } else if section == 2 {
             return 1
         }
         return 0
@@ -58,21 +58,31 @@ extension SoupViewController: UITableViewDataSource, UITableViewDelegate {
             if indexPath.row == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "SoupTableViewCell") as! SoupTableViewCell
                 cell.titleLabel.text = "미역국"
-                cell.titleIamge.image = UIImage(named: "된장찌개")
+                cell.titleIamge.image = UIImage(named: "미역국")
                 cell.accessoryType = .disclosureIndicator
                 return cell
             }
             else if indexPath.row == 1 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "SoupTableViewCell") as! SoupTableViewCell
                 cell.titleLabel.text = "콩나물국"
-                cell.titleIamge.image = UIImage(named: "된장찌개")
+                cell.titleIamge.image = UIImage(named: "콩나물5")
                 cell.accessoryType = .disclosureIndicator
                 return cell
-            } else if indexPath.row == 2 {
+            }
+//            else if indexPath.row == 2 {
+//                let cell = tableView.dequeueReusableCell(withIdentifier: "SoupTableViewCell") as! SoupTableViewCell
+//                cell.titleLabel.text = "쇠고기무국"
+//                cell.titleIamge.image = UIImage(named: "된장찌개")
+//                cell.accessoryType = .disclosureIndicator
+//                return cell
+//            }
+        }
+        
+        if indexPath.section == 2 {
+            if indexPath.row == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "SoupTableViewCell") as! SoupTableViewCell
-                cell.titleLabel.text = "쇠고기무국"
-                cell.titleIamge.image = UIImage(named: "된장찌개")
-                cell.accessoryType = .disclosureIndicator
+                cell.titleIamge.image = UIImage(named: "숲")
+                cell.titleLabel.text = "재료를 구하러 가볼까요?"
                 return cell
             }
         }
