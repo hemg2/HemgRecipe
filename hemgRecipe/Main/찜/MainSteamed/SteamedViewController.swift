@@ -37,13 +37,13 @@ extension SteamedViewController: UICollectionViewDelegate, UICollectionViewDataS
             }
             else if indexPath.row == 1 {
                 guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? SteamedCollectionViewCell else { fatalError() }
-                cell.steamedLabel.text = "콜렉션 22"
-                cell.steamedImageView.image = UIImage(named: "김치1")
+                cell.steamedLabel.text = "찜닭"
+                cell.steamedImageView.image = UIImage(named: "찜닭")
                 return cell
             }
             else if indexPath.row == 2 {
                 guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? SteamedCollectionViewCell else { fatalError() }
-                cell.steamedLabel.text = "콜렉션 33"
+                cell.steamedLabel.text = "갈비찜"
                 cell.steamedImageView.image = UIImage(named: "김치2")
                 return cell
             }
@@ -51,19 +51,19 @@ extension SteamedViewController: UICollectionViewDelegate, UICollectionViewDataS
         if indexPath.section == 1 {
             if indexPath.row == 0 {
                 guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? SteamedCollectionViewCell else { fatalError() }
-                cell.steamedLabel.text = "콜렉션 11"
+                cell.steamedLabel.text = "아귀찜"
                 cell.steamedImageView.image = UIImage(named: "숲")
                 return cell
             }
             else if indexPath.row == 1 {
                 guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? SteamedCollectionViewCell else { fatalError() }
-                cell.steamedLabel.text = "콜렉션 22"
+                cell.steamedLabel.text = "어묵 콩나물찜"
                 cell.steamedImageView.image = UIImage(named: "김치3")
                 return cell
             }
             else if indexPath.row == 2 {
                 guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? SteamedCollectionViewCell else { fatalError() }
-                cell.steamedLabel.text = "콜렉션 33"
+                cell.steamedLabel.text = "바지락 술찜"
                 cell.steamedImageView.image = UIImage(named: "김치1")
                 return cell
             }
@@ -80,12 +80,11 @@ extension SteamedViewController: UICollectionViewDelegate, UICollectionViewDataS
             let VC = storyboacrd.instantiateViewController(withIdentifier: "EggCustard") as! EggCustardViewController
             navigationController?.pushViewController(VC, animated: true)
         }
-//        else if indexPath.row == 1 {
-//            let storyboacrd = UIStoryboard.init(name: "Steamed", bundle: nil)
-//            let popUpVC = storyboacrd.instantiateViewController(withIdentifier: "Steamed") as! SteamedViewController
-//            navigationController?.pushViewController(popUpVC, animated: true)
-//            print("찜")
-//        }
+        else if indexPath.row == 1 {
+            let storyboacrd = UIStoryboard.init(name: "SteamedChicken", bundle: nil)
+            let popUpVC = storyboacrd.instantiateViewController(withIdentifier: "SteamedChicken") as! SteamedChickenViewController
+            navigationController?.pushViewController(popUpVC, animated: true)
+        }
     }
 }
 

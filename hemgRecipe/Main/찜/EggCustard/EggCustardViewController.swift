@@ -25,7 +25,7 @@ extension EggCustardViewController: UITableViewDelegate, UITableViewDataSource {
         if section == 0 {
             return 1
         }
-        else if section == 1{
+        else if section == 1 {
             return 5
         }
         return 0
@@ -73,8 +73,8 @@ extension EggCustardViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
-        case 0: return "재료"
-        case 1: return "순서"
+        case 0: return "계란찜 재료"
+        case 1: return "조리 순서"
         default: return nil
         }
     }

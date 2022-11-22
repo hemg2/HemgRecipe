@@ -38,6 +38,9 @@
 		63021F1E292CD28900B8AB26 /* EggCustard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021F1D292CD28900B8AB26 /* EggCustard.storyboard */; };
 		63021F20292CD29700B8AB26 /* EggCustardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F1F292CD29700B8AB26 /* EggCustardViewController.swift */; };
 		63021F22292CD36700B8AB26 /* EggCustardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F21292CD36700B8AB26 /* EggCustardTableViewCell.swift */; };
+		63021F25292CF14200B8AB26 /* SteamedChicken.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021F24292CF14200B8AB26 /* SteamedChicken.storyboard */; };
+		63021F27292CF14F00B8AB26 /* SteamedChickenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F26292CF14E00B8AB26 /* SteamedChickenTableViewCell.swift */; };
+		63021F29292CF16000B8AB26 /* SteamedChickenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F28292CF16000B8AB26 /* SteamedChickenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +77,9 @@
 		63021F1D292CD28900B8AB26 /* EggCustard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EggCustard.storyboard; sourceTree = "<group>"; };
 		63021F1F292CD29700B8AB26 /* EggCustardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggCustardViewController.swift; sourceTree = "<group>"; };
 		63021F21292CD36700B8AB26 /* EggCustardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggCustardTableViewCell.swift; sourceTree = "<group>"; };
+		63021F24292CF14200B8AB26 /* SteamedChicken.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SteamedChicken.storyboard; sourceTree = "<group>"; };
+		63021F26292CF14E00B8AB26 /* SteamedChickenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteamedChickenTableViewCell.swift; sourceTree = "<group>"; };
+		63021F28292CF16000B8AB26 /* SteamedChickenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteamedChickenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +148,8 @@
 		63021ED1292A11A500B8AB26 /* Steamed */ = {
 			isa = PBXGroup;
 			children = (
-				63021F1C292CD26D00B8AB26 /* Main */,
+				63021F1C292CD26D00B8AB26 /* MainSteamed */,
+				63021F23292CF0A300B8AB26 /* SteamedChicken */,
 				63021F1B292CD11100B8AB26 /* EggCustard */,
 			);
 			name = Steamed;
@@ -223,20 +230,31 @@
 			isa = PBXGroup;
 			children = (
 				63021F1D292CD28900B8AB26 /* EggCustard.storyboard */,
-				63021F1F292CD29700B8AB26 /* EggCustardViewController.swift */,
 				63021F21292CD36700B8AB26 /* EggCustardTableViewCell.swift */,
+				63021F1F292CD29700B8AB26 /* EggCustardViewController.swift */,
 			);
 			path = EggCustard;
 			sourceTree = "<group>";
 		};
-		63021F1C292CD26D00B8AB26 /* Main */ = {
+		63021F1C292CD26D00B8AB26 /* MainSteamed */ = {
 			isa = PBXGroup;
 			children = (
 				63021F17292CA7D200B8AB26 /* SteamedCollectionViewCell.swift */,
 				63021ED2292A11F700B8AB26 /* SteamedViewController.swift */,
 				63021ED4292A120200B8AB26 /* Steamed.storyboard */,
 			);
-			path = Main;
+			path = MainSteamed;
+			sourceTree = "<group>";
+		};
+		63021F23292CF0A300B8AB26 /* SteamedChicken */ = {
+			isa = PBXGroup;
+			children = (
+				63021F24292CF14200B8AB26 /* SteamedChicken.storyboard */,
+				63021F26292CF14E00B8AB26 /* SteamedChickenTableViewCell.swift */,
+				63021F28292CF16000B8AB26 /* SteamedChickenViewController.swift */,
+			);
+			name = SteamedChicken;
+			path = "찜닭";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +323,7 @@
 				63021EFD292BCE8100B8AB26 /* SoftTofu.storyboard in Resources */,
 				63021ED5292A120200B8AB26 /* Steamed.storyboard in Resources */,
 				63021F1E292CD28900B8AB26 /* EggCustard.storyboard in Resources */,
+				63021F25292CF14200B8AB26 /* SteamedChicken.storyboard in Resources */,
 				63021EE4292B89BF00B8AB26 /* Miso.storyboard in Resources */,
 				63021EBB2929DCFF00B8AB26 /* Main.storyboard in Resources */,
 				63021F0C292C8D9900B8AB26 /* BeanSprouts.storyboard in Resources */,
@@ -324,11 +343,13 @@
 				63021EFB292BCE7600B8AB26 /* SoftTofuViewController.swift in Sources */,
 				63021EDD292A228C00B8AB26 /* KimchiStewViewController.swift in Sources */,
 				63021EF6292BC7CD00B8AB26 /* MisoTableViewCell.swift in Sources */,
+				63021F29292CF16000B8AB26 /* SteamedChickenViewController.swift in Sources */,
 				63021ED3292A11F700B8AB26 /* SteamedViewController.swift in Sources */,
 				63021EE7292BA41500B8AB26 /* FirstExplanationCell.swift in Sources */,
 				63021F20292CD29700B8AB26 /* EggCustardViewController.swift in Sources */,
 				63021F16292C904900B8AB26 /* SeaweedViewController.swift in Sources */,
 				63021F18292CA7D200B8AB26 /* SteamedCollectionViewCell.swift in Sources */,
+				63021F27292CF14F00B8AB26 /* SteamedChickenTableViewCell.swift in Sources */,
 				63021EB42929DCFF00B8AB26 /* AppDelegate.swift in Sources */,
 				63021F0E292C8DB600B8AB26 /* SeaweedTableViewCell.swift in Sources */,
 				63021F06292C8D5C00B8AB26 /* BeanSproutsViewController.swift in Sources */,
