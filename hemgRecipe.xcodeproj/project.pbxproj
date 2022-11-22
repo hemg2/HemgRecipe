@@ -35,6 +35,9 @@
 		63021F14292C8FB700B8AB26 /* Seaweed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021F13292C8FB700B8AB26 /* Seaweed.storyboard */; };
 		63021F16292C904900B8AB26 /* SeaweedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F15292C904900B8AB26 /* SeaweedViewController.swift */; };
 		63021F18292CA7D200B8AB26 /* SteamedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F17292CA7D200B8AB26 /* SteamedCollectionViewCell.swift */; };
+		63021F1E292CD28900B8AB26 /* EggCustard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021F1D292CD28900B8AB26 /* EggCustard.storyboard */; };
+		63021F20292CD29700B8AB26 /* EggCustardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F1F292CD29700B8AB26 /* EggCustardViewController.swift */; };
+		63021F22292CD36700B8AB26 /* EggCustardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F21292CD36700B8AB26 /* EggCustardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +71,9 @@
 		63021F13292C8FB700B8AB26 /* Seaweed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Seaweed.storyboard; sourceTree = "<group>"; };
 		63021F15292C904900B8AB26 /* SeaweedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaweedViewController.swift; sourceTree = "<group>"; };
 		63021F17292CA7D200B8AB26 /* SteamedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteamedCollectionViewCell.swift; sourceTree = "<group>"; };
+		63021F1D292CD28900B8AB26 /* EggCustard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EggCustard.storyboard; sourceTree = "<group>"; };
+		63021F1F292CD29700B8AB26 /* EggCustardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggCustardViewController.swift; sourceTree = "<group>"; };
+		63021F21292CD36700B8AB26 /* EggCustardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggCustardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,9 +142,8 @@
 		63021ED1292A11A500B8AB26 /* Steamed */ = {
 			isa = PBXGroup;
 			children = (
-				63021F17292CA7D200B8AB26 /* SteamedCollectionViewCell.swift */,
-				63021ED2292A11F700B8AB26 /* SteamedViewController.swift */,
-				63021ED4292A120200B8AB26 /* Steamed.storyboard */,
+				63021F1C292CD26D00B8AB26 /* Main */,
+				63021F1B292CD11100B8AB26 /* EggCustard */,
 			);
 			name = Steamed;
 			path = "찜";
@@ -214,6 +219,26 @@
 			path = MainView;
 			sourceTree = "<group>";
 		};
+		63021F1B292CD11100B8AB26 /* EggCustard */ = {
+			isa = PBXGroup;
+			children = (
+				63021F1D292CD28900B8AB26 /* EggCustard.storyboard */,
+				63021F1F292CD29700B8AB26 /* EggCustardViewController.swift */,
+				63021F21292CD36700B8AB26 /* EggCustardTableViewCell.swift */,
+			);
+			path = EggCustard;
+			sourceTree = "<group>";
+		};
+		63021F1C292CD26D00B8AB26 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				63021F17292CA7D200B8AB26 /* SteamedCollectionViewCell.swift */,
+				63021ED2292A11F700B8AB26 /* SteamedViewController.swift */,
+				63021ED4292A120200B8AB26 /* Steamed.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -279,6 +304,7 @@
 				63021EE2292B889A00B8AB26 /* Kimchi.storyboard in Resources */,
 				63021EFD292BCE8100B8AB26 /* SoftTofu.storyboard in Resources */,
 				63021ED5292A120200B8AB26 /* Steamed.storyboard in Resources */,
+				63021F1E292CD28900B8AB26 /* EggCustard.storyboard in Resources */,
 				63021EE4292B89BF00B8AB26 /* Miso.storyboard in Resources */,
 				63021EBB2929DCFF00B8AB26 /* Main.storyboard in Resources */,
 				63021F0C292C8D9900B8AB26 /* BeanSprouts.storyboard in Resources */,
@@ -292,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63021F22292CD36700B8AB26 /* EggCustardTableViewCell.swift in Sources */,
 				63021ED8292A156A00B8AB26 /* SoupTableViewCell.swift in Sources */,
 				63021F10292C8E9400B8AB26 /* BeanSproutsTableViewCell.swift in Sources */,
 				63021EFB292BCE7600B8AB26 /* SoftTofuViewController.swift in Sources */,
@@ -299,6 +326,7 @@
 				63021EF6292BC7CD00B8AB26 /* MisoTableViewCell.swift in Sources */,
 				63021ED3292A11F700B8AB26 /* SteamedViewController.swift in Sources */,
 				63021EE7292BA41500B8AB26 /* FirstExplanationCell.swift in Sources */,
+				63021F20292CD29700B8AB26 /* EggCustardViewController.swift in Sources */,
 				63021F16292C904900B8AB26 /* SeaweedViewController.swift in Sources */,
 				63021F18292CA7D200B8AB26 /* SteamedCollectionViewCell.swift in Sources */,
 				63021EB42929DCFF00B8AB26 /* AppDelegate.swift in Sources */,

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Egg Custard View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="EggCustard" id="Y6W-OH-hqX" customClass="EggCustardViewController" customModule="hemgRecipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="88d-Mm-kqY">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="gyj-t6-ieZ" customClass="EggCustardTableViewCell" customModule="hemgRecipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gyj-t6-ieZ" id="lG1-tZ-6Fn">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ey3-P1-mxO">
+                                                    <rect key="frame" x="5" y="5" width="120" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="7Pw-N8-cY1"/>
+                                                        <constraint firstAttribute="height" constant="90" id="9gd-aC-sTo"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="start" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cVh-7p-t02">
+                                                    <rect key="frame" x="130" y="5" width="240" height="90"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="240" id="Dqq-v2-q3r"/>
+                                                        <constraint firstAttribute="height" constant="90" id="mar-K9-dIm"/>
+                                                    </constraints>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cVh-7p-t02" firstAttribute="bottom" secondItem="ey3-P1-mxO" secondAttribute="bottom" id="8fz-fF-rQ3"/>
+                                                <constraint firstItem="ey3-P1-mxO" firstAttribute="leading" secondItem="lG1-tZ-6Fn" secondAttribute="leading" constant="5" id="Ika-X9-NaO"/>
+                                                <constraint firstItem="cVh-7p-t02" firstAttribute="top" secondItem="ey3-P1-mxO" secondAttribute="top" id="nna-S6-O36"/>
+                                                <constraint firstItem="ey3-P1-mxO" firstAttribute="top" secondItem="lG1-tZ-6Fn" secondAttribute="top" constant="5" id="qDW-Mf-54p"/>
+                                                <constraint firstItem="cVh-7p-t02" firstAttribute="leading" secondItem="ey3-P1-mxO" secondAttribute="trailing" constant="5" id="u6T-gf-WjP"/>
+                                                <constraint firstAttribute="bottom" secondItem="ey3-P1-mxO" secondAttribute="bottom" constant="5" id="wpf-sc-s55"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="EggCustardImageView" destination="ey3-P1-mxO" id="DqK-hr-Shw"/>
+                                            <outlet property="EggCustardTextView" destination="cVh-7p-t02" id="EgR-4b-f7k"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="EiU-TX-YSZ"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="Oz4-q8-rDk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="88d-Mm-kqY" secondAttribute="bottom" id="3ia-vS-31C"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="88d-Mm-kqY" secondAttribute="trailing" id="5ma-O3-CDk"/>
+                            <constraint firstItem="88d-Mm-kqY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="CLV-bj-p9W"/>
+                            <constraint firstItem="88d-Mm-kqY" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="kO6-Zw-zqg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="eggCustardTableView" destination="88d-Mm-kqY" id="umM-Zu-p5o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
