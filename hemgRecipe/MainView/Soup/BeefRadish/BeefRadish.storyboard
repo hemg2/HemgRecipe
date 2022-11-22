@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Beef Radish View Controller-->
+        <scene sceneID="VMC-AP-EWc">
+            <objects>
+                <viewController storyboardIdentifier="BeefRadish" id="gGh-zZ-kD5" customClass="BeefRadishViewController" customModule="hemgRecipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S4P-wF-FCm">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="H7E-KY-y6S">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="YMm-YR-FuE" customClass="BeefRadishTableViewCell" customModule="hemgRecipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YMm-YR-FuE" id="Omc-rh-CeR">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c0N-rd-x7p">
+                                                    <rect key="frame" x="5" y="5" width="120" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="RdZ-ai-twC"/>
+                                                        <constraint firstAttribute="height" constant="90" id="fon-of-Pz4"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="sub" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9ln-ba-zeX">
+                                                    <rect key="frame" x="130" y="5" width="240" height="90"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="240" id="DZH-qV-q3U"/>
+                                                        <constraint firstAttribute="height" constant="90" id="Qft-yO-rph"/>
+                                                    </constraints>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9ln-ba-zeX" firstAttribute="leading" secondItem="c0N-rd-x7p" secondAttribute="trailing" constant="5" id="8cD-ae-JWg"/>
+                                                <constraint firstItem="9ln-ba-zeX" firstAttribute="bottom" secondItem="c0N-rd-x7p" secondAttribute="bottom" id="DMd-cU-XUP"/>
+                                                <constraint firstAttribute="bottom" secondItem="c0N-rd-x7p" secondAttribute="bottom" constant="5" id="Iyb-Bm-JDF"/>
+                                                <constraint firstItem="c0N-rd-x7p" firstAttribute="top" secondItem="Omc-rh-CeR" secondAttribute="top" constant="5" id="S5n-ES-8pe"/>
+                                                <constraint firstItem="9ln-ba-zeX" firstAttribute="top" secondItem="c0N-rd-x7p" secondAttribute="top" id="v2U-Fe-HF4"/>
+                                                <constraint firstItem="c0N-rd-x7p" firstAttribute="leading" secondItem="Omc-rh-CeR" secondAttribute="leading" constant="5" id="v6O-zy-wae"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="BeefRadishImageView" destination="c0N-rd-x7p" id="bZb-Jl-wwT"/>
+                                            <outlet property="BeefRadishTextView" destination="9ln-ba-zeX" id="q1A-NX-3Qm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Q8q-W4-g2T"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="H7E-KY-y6S" firstAttribute="top" secondItem="Q8q-W4-g2T" secondAttribute="top" id="QM0-nx-6Q1"/>
+                            <constraint firstItem="Q8q-W4-g2T" firstAttribute="trailing" secondItem="H7E-KY-y6S" secondAttribute="trailing" id="Su6-Eg-ICv"/>
+                            <constraint firstItem="H7E-KY-y6S" firstAttribute="leading" secondItem="Q8q-W4-g2T" secondAttribute="leading" id="ujh-Sw-qYV"/>
+                            <constraint firstItem="Q8q-W4-g2T" firstAttribute="bottom" secondItem="H7E-KY-y6S" secondAttribute="bottom" id="vOF-OJ-TbQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="H7E-KY-y6S" id="mZp-em-qMh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z8g-G0-FPi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178" y="-4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

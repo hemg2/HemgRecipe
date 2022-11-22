@@ -21,29 +21,29 @@
                                 <rect key="frame" x="0.0" y="47" width="390" height="763"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" rowHeight="80" id="zgf-2u-Rwo" customClass="MisoTableViewCell" customModule="hemgRecipe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="390" height="80"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" rowHeight="100" id="zgf-2u-Rwo" customClass="MisoTableViewCell" customModule="hemgRecipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zgf-2u-Rwo" id="Q5b-2x-9Zc">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="test" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Gj-yN-2VV">
-                                                    <rect key="frame" x="130" y="5" width="240" height="70"/>
+                                                    <rect key="frame" x="130" y="5" width="240" height="90"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="240" id="YHa-A4-8t8"/>
-                                                        <constraint firstAttribute="height" constant="70" id="eJI-zD-QSo"/>
+                                                        <constraint firstAttribute="height" constant="90" id="eJI-zD-QSo"/>
                                                     </constraints>
                                                     <color key="textColor" systemColor="labelColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2iM-En-zqb">
-                                                    <rect key="frame" x="5" y="5" width="120" height="70"/>
+                                                    <rect key="frame" x="5" y="5" width="120" height="90"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="120" id="hUf-gf-a2S"/>
-                                                        <constraint firstAttribute="height" constant="70" id="nAs-Si-KQK"/>
+                                                        <constraint firstAttribute="height" constant="90" id="nAs-Si-KQK"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>

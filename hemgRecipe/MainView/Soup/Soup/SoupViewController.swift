@@ -10,11 +10,11 @@ import UIKit
 class SoupViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    
+    //    private let sections: [String] = ["찌개류", "국류"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    title = "국류"
+        title = "국류"
     }
 }
 
@@ -22,9 +22,11 @@ class SoupViewController: UIViewController {
 extension SoupViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return 4
+            return 3
         } else if section == 1 {
-            return 4
+            return 3
+        } else if section == 2{
+            return 1
         }
         return 0
     }
@@ -60,49 +62,75 @@ extension SoupViewController: UITableViewDataSource, UITableViewDelegate {
                 cell.accessoryType = .disclosureIndicator
                 return cell
             }
+            else if indexPath.row == 1 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "SoupTableViewCell") as! SoupTableViewCell
+                cell.titleLabel.text = "콩나물국"
+                cell.titleIamge.image = UIImage(named: "된장찌개")
+                cell.accessoryType = .disclosureIndicator
+                return cell
+            } else if indexPath.row == 2 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "SoupTableViewCell") as! SoupTableViewCell
+                cell.titleLabel.text = "쇠고기무국"
+                cell.titleIamge.image = UIImage(named: "된장찌개")
+                cell.accessoryType = .disclosureIndicator
+                return cell
+            }
         }
-//        else if indexPath.row == 4 {
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "SoupTableViewCell") as! SoupTableViewCell
-//            cell.titleLabel.text = "콩나물국"
-//            cell.titleIamge.image = UIImage(named: "된장찌개")
-//            cell.accessoryType = .disclosureIndicator
-//            return cell
-//        } else if indexPath.row == 5 {
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "SoupTableViewCell") as! SoupTableViewCell
-//            cell.titleLabel.text = "순찌개"
-//            cell.titleIamge.image = UIImage(named: "된장찌개")
-//            cell.accessoryType = .disclosureIndicator
-//            return cell
-//        }
         return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if indexPath.row == 0 {
-            let storyboacrd = UIStoryboard.init(name: "Kimchi", bundle: nil)
-            let VC = storyboacrd.instantiateViewController(withIdentifier: "Kimchi") as! KimchiStewViewController
-            navigationController?.pushViewController(VC, animated: true)
-            print("1page") //색션은 타이틀 그룹 묶음용
+        if indexPath.section == 0 {
+            if indexPath.row == 0 {
+                let storyboacrd = UIStoryboard.init(name: "Kimchi", bundle: nil)
+                let VC = storyboacrd.instantiateViewController(withIdentifier: "Kimchi") as! KimchiStewViewController
+                navigationController?.pushViewController(VC, animated: true)
+                print("1page") //색션은 타이틀 그룹 묶음용
+            }
+            else if indexPath.row == 1 {
+                let storyboacrd1 = UIStoryboard.init(name: "Miso", bundle: nil)
+                let VC = storyboacrd1.instantiateViewController(withIdentifier: "Miso") as! MisoStewViewController
+                navigationController?.pushViewController(VC, animated: true)
+                print("2page")
+            }
+            else if indexPath.row == 2 {
+                let storyboacrd1 = UIStoryboard.init(name: "SoftTofu", bundle: nil)
+                let VC = storyboacrd1.instantiateViewController(withIdentifier: "SoftTofu") as! SoftTofuViewController
+                navigationController?.pushViewController(VC, animated: true)
+                print("3page")
+            }
         }
-        else if indexPath.row == 1 {
-            let storyboacrd1 = UIStoryboard.init(name: "Miso", bundle: nil)
-            let VC = storyboacrd1.instantiateViewController(withIdentifier: "Miso") as! MisoStewViewController
-            navigationController?.pushViewController(VC, animated: true)
-            print("2page")
-        }
-        else if indexPath.row == 2 {
-            let storyboacrd1 = UIStoryboard.init(name: "SoftTofu", bundle: nil)
-            let VC = storyboacrd1.instantiateViewController(withIdentifier: "SoftTofu") as! SoftTofuViewController
-            navigationController?.pushViewController(VC, animated: true)
-            print("3page")
+        if indexPath.section == 1 {
+            if indexPath.row == 0 {
+                let storyboacrd = UIStoryboard.init(name: "Seaweed", bundle: nil)
+                let VC = storyboacrd.instantiateViewController(withIdentifier: "Seaweed") as! SeaweedViewController
+                navigationController?.pushViewController(VC, animated: true)
+            }
+            else if indexPath.row == 1 {
+                let storyboacrd1 = UIStoryboard.init(name: "BeanSprouts", bundle: nil)
+                let VC = storyboacrd1.instantiateViewController(withIdentifier: "BeanSprouts") as! BeanSproutsViewController
+                navigationController?.pushViewController(VC, animated: true)
+            }
+            else if indexPath.row == 2 {
+                let storyboacrd1 = UIStoryboard.init(name: "BeefRadish", bundle: nil)
+                let VC = storyboacrd1.instantiateViewController(withIdentifier: "BeefRadish") as! BeefRadishViewController
+                navigationController?.pushViewController(VC, animated: true)
+            }
         }
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        //        return sections[section]
         switch section {
         case 0: return "찌개류"
         case 1: return "국류"
+        case 2: return "기타"
         default: return nil
         }
+    }
+    
+    //색션의 갯수
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
     }
 }

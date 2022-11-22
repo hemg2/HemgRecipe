@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Seaweed View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Seaweed" id="Y6W-OH-hqX" customClass="SeaweedViewController" customModule="hemgRecipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZeF-fA-6BE">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="77a-15-Erg" customClass="SeaweedTableViewCell" customModule="hemgRecipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="77a-15-Erg" id="skH-NO-nmS">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9k5-UL-JsR">
+                                                    <rect key="frame" x="5" y="5" width="120" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="VEf-iL-zSC"/>
+                                                        <constraint firstAttribute="height" constant="90" id="Ysd-Jw-ksA"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="sub" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xDS-2Q-RZd">
+                                                    <rect key="frame" x="130" y="5" width="240" height="90"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="240" id="Gdw-xU-wNW"/>
+                                                        <constraint firstAttribute="height" constant="90" id="iBZ-hr-GH5"/>
+                                                    </constraints>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xDS-2Q-RZd" firstAttribute="leading" secondItem="9k5-UL-JsR" secondAttribute="trailing" constant="5" id="0Qz-Ih-laN"/>
+                                                <constraint firstItem="9k5-UL-JsR" firstAttribute="leading" secondItem="skH-NO-nmS" secondAttribute="leading" constant="5" id="PIh-B4-4HS"/>
+                                                <constraint firstItem="xDS-2Q-RZd" firstAttribute="bottom" secondItem="9k5-UL-JsR" secondAttribute="bottom" id="UfL-XE-YIE"/>
+                                                <constraint firstItem="9k5-UL-JsR" firstAttribute="top" secondItem="skH-NO-nmS" secondAttribute="top" constant="5" id="Vt6-R7-2CP"/>
+                                                <constraint firstItem="xDS-2Q-RZd" firstAttribute="top" secondItem="9k5-UL-JsR" secondAttribute="top" id="YkA-XP-h8V"/>
+                                                <constraint firstAttribute="bottom" secondItem="9k5-UL-JsR" secondAttribute="bottom" constant="5" id="trU-n5-AeF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="SeaweedImageView" destination="9k5-UL-JsR" id="hW4-Ah-xxa"/>
+                                            <outlet property="SeaweedTextView" destination="xDS-2Q-RZd" id="nhf-Nm-PXn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ZeF-fA-6BE" secondAttribute="bottom" id="889-s5-DxC"/>
+                            <constraint firstItem="ZeF-fA-6BE" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="cRP-KJ-Bit"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZeF-fA-6BE" secondAttribute="trailing" id="syY-r2-rM5"/>
+                            <constraint firstItem="ZeF-fA-6BE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="wDB-3v-uhR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="ZeF-fA-6BE" id="fpv-Jv-ieD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41.53846153846154" y="-2.1327014218009479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
