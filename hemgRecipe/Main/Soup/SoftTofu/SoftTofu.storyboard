@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="COa-7p-CaO">
-                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <rect key="frame" x="0.0" y="47" width="390" height="797"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="THM-Ch-bFm" customClass="SoftTofuTableViewCell" customModule="hemgRecipe" customModuleProvider="target">
@@ -74,7 +74,7 @@
                             <constraint firstItem="COa-7p-CaO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="1ax-Yy-VzW"/>
                             <constraint firstItem="COa-7p-CaO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="hxf-Wd-mXI"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="COa-7p-CaO" secondAttribute="trailing" id="iod-5d-knx"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="COa-7p-CaO" secondAttribute="bottom" id="zdv-gR-KSd"/>
+                            <constraint firstAttribute="bottom" secondItem="COa-7p-CaO" secondAttribute="bottom" id="zdv-gR-KSd"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -30,6 +30,9 @@ extension SteamedChickenViewController: UITableViewDelegate, UITableViewDataSour
         else if section == 1 {
             return 8
         }
+        else if section == 2 {
+            return 1
+        }
         return 0
     }
     
@@ -80,6 +83,14 @@ extension SteamedChickenViewController: UITableViewDelegate, UITableViewDataSour
                 return cell
             }
         }
+        if indexPath.section == 2 {
+            if indexPath.row == 0 {
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? SteamedChickenTableViewCell else { fatalError() }
+                cell.steamedChikenImageView.image = UIImage(named: "찜닭3")
+                cell.SteamedChickenTextView.text = "양념이 잘 베일수 있게 꼭 1시간 이상 재워 준다."
+                return cell
+            }
+        }
         return UITableViewCell()
     }
     
@@ -87,11 +98,12 @@ extension SteamedChickenViewController: UITableViewDelegate, UITableViewDataSour
         switch section {
         case 0: return "찜닭 재료"
         case 1: return "조리 순서"
+        case 2: return "중요 포인트"
         default: return nil
         }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
 }

@@ -32,19 +32,22 @@ extension SteamedViewController: UICollectionViewDelegate, UICollectionViewDataS
             if indexPath.row == 0 {
                 guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? SteamedCollectionViewCell else { fatalError() }
                 cell.steamedLabel.text = "계란찜"
+                cell.difficultyLabel.text = "초급"
                 cell.steamedImageView.image = UIImage(named: "계란찜5")
                 return cell
             }
             else if indexPath.row == 1 {
                 guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? SteamedCollectionViewCell else { fatalError() }
                 cell.steamedLabel.text = "찜닭"
+                cell.difficultyLabel.text = "중급"
                 cell.steamedImageView.image = UIImage(named: "찜닭")
                 return cell
             }
             else if indexPath.row == 2 {
                 guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? SteamedCollectionViewCell else { fatalError() }
                 cell.steamedLabel.text = "갈비찜"
-                cell.steamedImageView.image = UIImage(named: "김치2")
+                cell.difficultyLabel.text = "중급"
+                cell.steamedImageView.image = UIImage(named: "갈비찜")
                 return cell
             }
         }
@@ -52,18 +55,21 @@ extension SteamedViewController: UICollectionViewDelegate, UICollectionViewDataS
             if indexPath.row == 0 {
                 guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? SteamedCollectionViewCell else { fatalError() }
                 cell.steamedLabel.text = "아귀찜"
+                cell.difficultyLabel.text = "상급"
                 cell.steamedImageView.image = UIImage(named: "숲")
                 return cell
             }
             else if indexPath.row == 1 {
                 guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? SteamedCollectionViewCell else { fatalError() }
                 cell.steamedLabel.text = "어묵 콩나물찜"
+                cell.difficultyLabel.text = "중급"
                 cell.steamedImageView.image = UIImage(named: "김치3")
                 return cell
             }
             else if indexPath.row == 2 {
                 guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? SteamedCollectionViewCell else { fatalError() }
                 cell.steamedLabel.text = "바지락 술찜"
+                cell.difficultyLabel.text = "상급"
                 cell.steamedImageView.image = UIImage(named: "김치1")
                 return cell
             }
@@ -82,8 +88,13 @@ extension SteamedViewController: UICollectionViewDelegate, UICollectionViewDataS
         }
         else if indexPath.row == 1 {
             let storyboacrd = UIStoryboard.init(name: "SteamedChicken", bundle: nil)
-            let popUpVC = storyboacrd.instantiateViewController(withIdentifier: "SteamedChicken") as! SteamedChickenViewController
-            navigationController?.pushViewController(popUpVC, animated: true)
+            let VC = storyboacrd.instantiateViewController(withIdentifier: "SteamedChicken") as! SteamedChickenViewController
+            navigationController?.pushViewController(VC, animated: true)
+        }
+        else if indexPath.row == 2 {
+            let storyboacrd = UIStoryboard.init(name: "GalbiJim", bundle: nil)
+            let VC = storyboacrd.instantiateViewController(withIdentifier: "GalbiJim") as! GalbiJimViewController
+            navigationController?.pushViewController(VC, animated: true)
         }
     }
 }

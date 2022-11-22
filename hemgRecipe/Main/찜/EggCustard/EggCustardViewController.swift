@@ -28,6 +28,9 @@ extension EggCustardViewController: UITableViewDelegate, UITableViewDataSource {
         else if section == 1 {
             return 5
         }
+        else if section == 2 {
+            return 1
+        }
         return 0
     }
     
@@ -68,6 +71,15 @@ extension EggCustardViewController: UITableViewDelegate, UITableViewDataSource {
                 return cell
             }
         }
+        if indexPath.section == 2 {
+            if indexPath.row == 0 {
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? EggCustardTableViewCell
+                 else {fatalError()}
+                 cell.EggCustardImageView.image = UIImage(named: "")
+                 cell.EggCustardTextView.text = ""
+                 return cell
+            }
+        }
         return UITableViewCell()
     }
     
@@ -75,12 +87,13 @@ extension EggCustardViewController: UITableViewDelegate, UITableViewDataSource {
         switch section {
         case 0: return "계란찜 재료"
         case 1: return "조리 순서"
+        case 2: return "중요 포인트"
         default: return nil
         }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     

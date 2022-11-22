@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fVZ-DR-6ga">
-                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <rect key="frame" x="0.0" y="47" width="390" height="797"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" rowHeight="100" id="zgf-2u-Rwo" customClass="MisoTableViewCell" customModule="hemgRecipe" customModuleProvider="target">
@@ -72,7 +72,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="fVZ-DR-6ga" firstAttribute="top" secondItem="faQ-62-lmf" secondAttribute="top" id="Low-sd-pIZ"/>
-                            <constraint firstItem="faQ-62-lmf" firstAttribute="bottom" secondItem="fVZ-DR-6ga" secondAttribute="bottom" id="kJA-V2-oHj"/>
+                            <constraint firstAttribute="bottom" secondItem="fVZ-DR-6ga" secondAttribute="bottom" id="kJA-V2-oHj"/>
                             <constraint firstItem="faQ-62-lmf" firstAttribute="trailing" secondItem="fVZ-DR-6ga" secondAttribute="trailing" id="rEX-MH-6k7"/>
                             <constraint firstItem="fVZ-DR-6ga" firstAttribute="leading" secondItem="faQ-62-lmf" secondAttribute="leading" id="uL2-fx-ci1"/>
                         </constraints>

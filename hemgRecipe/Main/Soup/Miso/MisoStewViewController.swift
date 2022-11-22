@@ -24,6 +24,8 @@ extension MisoStewViewController: UITableViewDelegate, UITableViewDataSource {
             return 1
         } else if section == 1 {
             return 5
+        } else if section == 2 {
+            return 1
         }
         return 0
     }
@@ -37,8 +39,7 @@ extension MisoStewViewController: UITableViewDelegate, UITableViewDataSource {
                 return cell
             }
         }
-        
-        if indexPath.section == 1 {
+       else if indexPath.section == 1 {
             if indexPath.row == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "cell1") as! MisoTableViewCell
                 cell.misoImageView.image = UIImage(named: "된장1")
@@ -66,6 +67,14 @@ extension MisoStewViewController: UITableViewDelegate, UITableViewDataSource {
                 return cell
             }
         }
+        else if indexPath.section == 2 {
+            if indexPath.row == 0 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "cell1") as! MisoTableViewCell
+                cell.misoImageView.image = UIImage(named: "된장2")
+                cell.misoTextView.text = "김치가 타지 않도록 잘 저어준다."
+                return cell
+            }
+        }
         return UITableViewCell()
     }
     
@@ -73,12 +82,13 @@ extension MisoStewViewController: UITableViewDelegate, UITableViewDataSource {
         switch section {
         case 0: return "재료"
         case 1: return "순서"
+        case 2: return "중요 포인트"
         default: return nil
         }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
 }
 

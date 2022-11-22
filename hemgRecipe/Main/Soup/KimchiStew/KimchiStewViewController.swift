@@ -24,6 +24,8 @@ extension KimchiStewViewController: UITableViewDataSource, UITableViewDelegate {
             return 1
         } else if section == 1 {
             return 3
+        } else if section == 2 {
+            return 1
         }
         return 0
     }
@@ -36,8 +38,7 @@ extension KimchiStewViewController: UITableViewDataSource, UITableViewDelegate {
                 cell.textView.text = "김치 1/4포기, 두부 1/2모, 대파 1/2대, 김치국물 1/2컵, 물 600ml"
                 return cell
             }
-        }
-        if indexPath.section == 1 {
+        } else if indexPath.section == 1 {
             if indexPath.row == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! FirstExplanationCell
                 cell.titleImage.image = UIImage(named: "김치1")
@@ -54,6 +55,13 @@ extension KimchiStewViewController: UITableViewDataSource, UITableViewDelegate {
                 cell.textView.text = "두부와 대파를 넣고 2분 정도 더 끓이면 완성!"
                 return cell
             }
+        } else if indexPath.section == 2 {
+            if indexPath.row == 0 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! FirstExplanationCell
+                cell.titleImage.image = UIImage(named: "김치2")
+                cell.textView.text = "김치가 너무 타지 않도록 하기"
+                return cell
+            }
         }
         return UITableViewCell()
     }
@@ -62,11 +70,12 @@ extension KimchiStewViewController: UITableViewDataSource, UITableViewDelegate {
         switch section {
         case 0: return "재료"
         case 1: return "순서"
+        case 2: return "중요 포인트"
         default: return nil
         }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
 }

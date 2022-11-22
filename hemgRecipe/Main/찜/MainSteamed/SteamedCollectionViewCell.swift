@@ -10,4 +10,5 @@ import UIKit
 class SteamedCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var steamedImageView: UIImageView!
     @IBOutlet weak var steamedLabel: UILabel!
+    @IBOutlet weak var difficultyLabel: UILabel!
 }

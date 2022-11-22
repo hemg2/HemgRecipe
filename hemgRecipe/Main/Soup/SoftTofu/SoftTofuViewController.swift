@@ -26,6 +26,8 @@ extension SoftTofuViewController: UITableViewDelegate, UITableViewDataSource {
             return 1
         } else if section == 1 {
             return 5
+        } else if section == 2 {
+            return 2
         }
         return 0
     }
@@ -35,11 +37,10 @@ extension SoftTofuViewController: UITableViewDelegate, UITableViewDataSource {
             if indexPath.row == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! SoftTofuTableViewCell
                 cell.softTofuImageView.image = UIImage(named: "순두부재료")
-                cell.softTofuTextView.text = "김치 1/2컵, 순두부 1봉, 애호박 1/4개, 표고버섯2개, 대파1/3개, 양파1/4개, 쳥양고추1개, // 양념장재료-> 고춧가루 1큰술, 맛술 1큰술, 국간장 1큰술, 다진마늘 1큰술, 후춧가루 약간, 들기름 1작은술"
+                cell.softTofuTextView.text = "김치 1/2컵, 순두부 1봉, 애호박 1/4개, 표고버섯2개, 대파1/3개, 양파1/4개, 쳥양고추1개,                                                  양념장재료-> 고춧가루 1큰술, 맛술 1큰술, 국간장 1큰술, 다진마늘 1큰술, 후춧가루 약간, 들기름 1작은술"
                 return cell
             }
         }
-        
         
         if indexPath.section == 1 {
             if indexPath.row == 0 {
@@ -73,18 +74,33 @@ extension SoftTofuViewController: UITableViewDelegate, UITableViewDataSource {
                 return cell
             }
         }
+        else if indexPath.section == 2 {
+            if indexPath.row == 0 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! SoftTofuTableViewCell
+                cell.softTofuImageView.image = UIImage(named: "순두부3")
+                cell.softTofuTextView.text = "파가 너무 타지 않도록 과하지 않게 소태 시켜준다."
+                return cell
+            }
+            if indexPath.row == 1 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! SoftTofuTableViewCell
+                cell.softTofuImageView.image = UIImage(named: "순두부4")
+                cell.softTofuTextView.text = "순두부의 크기를 작지않게 적당량 잘라 넣어준다."
+                return cell
+            }
+        }
         return UITableViewCell()
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0: return "재료"
         case 1: return "순서"
+        case 2: return "중요 포인트"
         default: return nil
         }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
 }

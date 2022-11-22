@@ -25,6 +25,8 @@ extension BeanSproutsViewController: UITableViewDelegate, UITableViewDataSource 
             return 1
         } else if section == 1 {
             return 4
+        } else if section == 2{
+            return 1
         }
         return 0
     }
@@ -66,6 +68,14 @@ extension BeanSproutsViewController: UITableViewDelegate, UITableViewDataSource 
                 return cell
             }
         }
+        if indexPath.section == 2 {
+            if indexPath.row == 0 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! BeanSproutsTableViewCell
+                cell.BeanSproutsImageView.image = UIImage(named: "콩나물4")
+                cell.BeanSproutsTextView.text = "콩나물에 의해 비린내가 날 수 있으므로 뚜겅을 열어 두고 끓인다."
+                return cell
+            }
+        }
         return UITableViewCell()
     }
     
@@ -74,12 +84,13 @@ extension BeanSproutsViewController: UITableViewDelegate, UITableViewDataSource 
         switch section {
         case 0: return "재료"
         case 1: return "순서"
+        case 2: return "중요 포인트"
         default: return nil
         }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
 }

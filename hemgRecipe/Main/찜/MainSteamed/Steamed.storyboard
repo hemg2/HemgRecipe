@@ -29,21 +29,31 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="4TI-Zv-zXD" customClass="SteamedCollectionViewCell" customModule="hemgRecipe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="130"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wmh-fK-iq2">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="130"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RoJ-wE-rTW">
-                                                    <rect key="frame" x="24" y="25" width="80" height="80"/>
+                                                    <rect key="frame" x="47.666666666666657" y="47.666666666666657" width="80" height="80"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="DLf-VF-qY9"/>
                                                         <constraint firstAttribute="width" constant="80" id="ZZC-2H-H7E"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Le0-nf-zpY">
-                                                    <rect key="frame" x="43" y="107" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Le0-nf-zpY">
+                                                    <rect key="frame" x="66.333333333333329" y="129.66666666666666" width="42.666666666666671" height="20.333333333333343"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVE-cU-1VM">
+                                                    <rect key="frame" x="66.666666666666671" y="152" width="42" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="Bjq-dl-eT9"/>
+                                                        <constraint firstAttribute="height" constant="21" id="pRf-mG-vbT"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -52,12 +62,16 @@
                                             <constraints>
                                                 <constraint firstItem="Le0-nf-zpY" firstAttribute="centerX" secondItem="wmh-fK-iq2" secondAttribute="centerX" id="4v3-Db-7ll"/>
                                                 <constraint firstItem="RoJ-wE-rTW" firstAttribute="centerY" secondItem="wmh-fK-iq2" secondAttribute="centerY" id="Bln-3D-y5I"/>
-                                                <constraint firstAttribute="bottom" secondItem="Le0-nf-zpY" secondAttribute="bottom" constant="2" id="DqH-nO-3bO"/>
                                                 <constraint firstItem="Le0-nf-zpY" firstAttribute="top" secondItem="RoJ-wE-rTW" secondAttribute="bottom" constant="2" id="IcZ-re-Ula"/>
+                                                <constraint firstItem="OVE-cU-1VM" firstAttribute="centerX" secondItem="wmh-fK-iq2" secondAttribute="centerX" id="J7y-Gl-spD"/>
+                                                <constraint firstAttribute="bottom" secondItem="OVE-cU-1VM" secondAttribute="bottom" constant="2" id="JpY-SL-Tbs"/>
                                                 <constraint firstItem="RoJ-wE-rTW" firstAttribute="centerX" secondItem="wmh-fK-iq2" secondAttribute="centerX" id="M6o-Q8-3yq"/>
+                                                <constraint firstItem="OVE-cU-1VM" firstAttribute="top" secondItem="Le0-nf-zpY" secondAttribute="bottom" constant="2" id="mhM-3r-Bav"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="175" height="175"/>
                                         <connections>
+                                            <outlet property="difficultyLabel" destination="OVE-cU-1VM" id="CbH-3e-Ccz"/>
                                             <outlet property="steamedImageView" destination="RoJ-wE-rTW" id="bDQ-44-EuT"/>
                                             <outlet property="steamedLabel" destination="Le0-nf-zpY" id="2fH-J1-hGd"/>
                                         </connections>
@@ -84,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48" y="-2"/>
+            <point key="canvasLocation" x="47.692307692307693" y="-2.1327014218009479"/>
         </scene>
     </scenes>
     <resources>

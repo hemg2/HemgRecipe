@@ -27,6 +27,8 @@ extension SeaweedViewController: UITableViewDataSource, UITableViewDelegate {
             return 1
         } else if section == 1 {
             return 4
+        } else if section == 2{
+            return 1
         }
         return 0
     }
@@ -63,6 +65,14 @@ extension SeaweedViewController: UITableViewDataSource, UITableViewDelegate {
                 return cell
             }
         }
+        if indexPath.section == 2 {
+            if indexPath.row == 0 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! SeaweedTableViewCell
+                cell.SeaweedImageView.image = UIImage(named: "")
+                cell.SeaweedTextView.text = ""
+                return cell
+            }
+        }
         return UITableViewCell()
     }
     
@@ -71,12 +81,13 @@ extension SeaweedViewController: UITableViewDataSource, UITableViewDelegate {
         switch section {
         case 0: return "재료"
         case 1: return "순서"
+        case 2: return "중요 포인트"
         default: return nil
         }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
 }

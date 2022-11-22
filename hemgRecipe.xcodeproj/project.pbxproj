@@ -41,6 +41,9 @@
 		63021F25292CF14200B8AB26 /* SteamedChicken.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021F24292CF14200B8AB26 /* SteamedChicken.storyboard */; };
 		63021F27292CF14F00B8AB26 /* SteamedChickenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F26292CF14E00B8AB26 /* SteamedChickenTableViewCell.swift */; };
 		63021F29292CF16000B8AB26 /* SteamedChickenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F28292CF16000B8AB26 /* SteamedChickenViewController.swift */; };
+		63021F2F292CFB5500B8AB26 /* GalbiJim.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021F2E292CFB5500B8AB26 /* GalbiJim.storyboard */; };
+		63021F31292CFB5E00B8AB26 /* GalbiJimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F30292CFB5E00B8AB26 /* GalbiJimViewController.swift */; };
+		63021F33292CFB6800B8AB26 /* GalbiJimTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F32292CFB6800B8AB26 /* GalbiJimTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +83,9 @@
 		63021F24292CF14200B8AB26 /* SteamedChicken.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SteamedChicken.storyboard; sourceTree = "<group>"; };
 		63021F26292CF14E00B8AB26 /* SteamedChickenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteamedChickenTableViewCell.swift; sourceTree = "<group>"; };
 		63021F28292CF16000B8AB26 /* SteamedChickenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteamedChickenViewController.swift; sourceTree = "<group>"; };
+		63021F2E292CFB5500B8AB26 /* GalbiJim.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GalbiJim.storyboard; sourceTree = "<group>"; };
+		63021F30292CFB5E00B8AB26 /* GalbiJimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalbiJimViewController.swift; sourceTree = "<group>"; };
+		63021F32292CFB6800B8AB26 /* GalbiJimTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalbiJimTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				63021F1C292CD26D00B8AB26 /* MainSteamed */,
+				63021F2B292CFB0E00B8AB26 /* GalbiJim */,
 				63021F23292CF0A300B8AB26 /* SteamedChicken */,
 				63021F1B292CD11100B8AB26 /* EggCustard */,
 			);
@@ -257,6 +264,17 @@
 			path = "찜닭";
 			sourceTree = "<group>";
 		};
+		63021F2B292CFB0E00B8AB26 /* GalbiJim */ = {
+			isa = PBXGroup;
+			children = (
+				63021F2E292CFB5500B8AB26 /* GalbiJim.storyboard */,
+				63021F30292CFB5E00B8AB26 /* GalbiJimViewController.swift */,
+				63021F32292CFB6800B8AB26 /* GalbiJimTableViewCell.swift */,
+			);
+			name = GalbiJim;
+			path = "갈비찜";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -326,6 +344,7 @@
 				63021F25292CF14200B8AB26 /* SteamedChicken.storyboard in Resources */,
 				63021EE4292B89BF00B8AB26 /* Miso.storyboard in Resources */,
 				63021EBB2929DCFF00B8AB26 /* Main.storyboard in Resources */,
+				63021F2F292CFB5500B8AB26 /* GalbiJim.storyboard in Resources */,
 				63021F0C292C8D9900B8AB26 /* BeanSprouts.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +359,7 @@
 				63021F22292CD36700B8AB26 /* EggCustardTableViewCell.swift in Sources */,
 				63021ED8292A156A00B8AB26 /* SoupTableViewCell.swift in Sources */,
 				63021F10292C8E9400B8AB26 /* BeanSproutsTableViewCell.swift in Sources */,
+				63021F33292CFB6800B8AB26 /* GalbiJimTableViewCell.swift in Sources */,
 				63021EFB292BCE7600B8AB26 /* SoftTofuViewController.swift in Sources */,
 				63021EDD292A228C00B8AB26 /* KimchiStewViewController.swift in Sources */,
 				63021EF6292BC7CD00B8AB26 /* MisoTableViewCell.swift in Sources */,
@@ -351,6 +371,7 @@
 				63021F18292CA7D200B8AB26 /* SteamedCollectionViewCell.swift in Sources */,
 				63021F27292CF14F00B8AB26 /* SteamedChickenTableViewCell.swift in Sources */,
 				63021EB42929DCFF00B8AB26 /* AppDelegate.swift in Sources */,
+				63021F31292CFB5E00B8AB26 /* GalbiJimViewController.swift in Sources */,
 				63021F0E292C8DB600B8AB26 /* SeaweedTableViewCell.swift in Sources */,
 				63021F06292C8D5C00B8AB26 /* BeanSproutsViewController.swift in Sources */,
 				63021EB62929DCFF00B8AB26 /* SceneDelegate.swift in Sources */,
