@@ -29,22 +29,33 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ttq-0p-ndT">
-                                                    <rect key="frame" x="45" y="5" width="300" height="90"/>
+                                                    <rect key="frame" x="5" y="5" width="170" height="90"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="300" id="9NY-lL-oHX"/>
-                                                        <constraint firstAttribute="height" constant="90" id="XRK-R8-RbI"/>
+                                                        <constraint firstAttribute="width" constant="170" id="XRv-sO-iOe"/>
+                                                        <constraint firstAttribute="height" constant="90" id="ZIS-Xs-IKC"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qLa-Md-X9g">
+                                                    <rect key="frame" x="185" y="5" width="200" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="170" id="Qim-QS-mBG"/>
+                                                        <constraint firstAttribute="height" constant="90" id="mnS-dp-4xj"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Ttq-0p-ndT" firstAttribute="top" secondItem="ZbS-e2-lEP" secondAttribute="top" constant="5" id="Cpe-F9-Iez"/>
-                                                <constraint firstAttribute="bottom" secondItem="Ttq-0p-ndT" secondAttribute="bottom" constant="5" id="b9t-Ev-BFn"/>
-                                                <constraint firstAttribute="trailing" secondItem="Ttq-0p-ndT" secondAttribute="trailing" constant="45" id="bH1-m4-UTw"/>
-                                                <constraint firstItem="Ttq-0p-ndT" firstAttribute="leading" secondItem="ZbS-e2-lEP" secondAttribute="leading" constant="45" id="fOB-le-PJK"/>
+                                                <constraint firstItem="qLa-Md-X9g" firstAttribute="top" secondItem="ZbS-e2-lEP" secondAttribute="top" constant="5" id="FKa-UM-W5F"/>
+                                                <constraint firstItem="qLa-Md-X9g" firstAttribute="leading" secondItem="Ttq-0p-ndT" secondAttribute="trailing" constant="10" id="Soz-L8-cbj"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ttq-0p-ndT" secondAttribute="bottom" constant="5" id="Wzs-6B-8u7"/>
+                                                <constraint firstAttribute="trailing" secondItem="qLa-Md-X9g" secondAttribute="trailing" constant="5" id="cYM-8W-3LL"/>
+                                                <constraint firstAttribute="bottom" secondItem="qLa-Md-X9g" secondAttribute="bottom" constant="5" id="iNv-1R-6Tg"/>
+                                                <constraint firstItem="Ttq-0p-ndT" firstAttribute="leading" secondItem="ZbS-e2-lEP" secondAttribute="leading" constant="5" id="q3I-SN-4LN"/>
+                                                <constraint firstItem="Ttq-0p-ndT" firstAttribute="top" secondItem="ZbS-e2-lEP" secondAttribute="top" constant="5" id="ska-hL-eru"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="MainImageView" destination="Ttq-0p-ndT" id="doK-YI-78o"/>
+                                            <outlet property="representativeImageView" destination="qLa-Md-X9g" id="f4P-zb-jEF"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" rowHeight="100" id="1BA-xO-Ldv" customClass="ExplanationCell" customModule="hemgRecipe" customModuleProvider="target">
@@ -55,21 +66,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="title2" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n0e-Tc-PsN">
-                                                    <rect key="frame" x="10" y="55" width="300" height="35"/>
+                                                    <rect key="frame" x="10" y="55" width="370" height="35"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="8ef-Te-M0Z"/>
-                                                        <constraint firstAttribute="width" constant="300" id="V9p-bg-euZ"/>
+                                                        <constraint firstAttribute="width" constant="370" id="V9p-bg-euZ"/>
                                                     </constraints>
                                                     <color key="textColor" systemColor="labelColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="title1" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KvK-6C-Keu">
-                                                    <rect key="frame" x="10" y="10" width="300" height="35"/>
+                                                    <rect key="frame" x="10" y="10" width="370" height="35"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="300" id="Ddc-nZ-Uq4"/>
+                                                        <constraint firstAttribute="width" constant="370" id="Ddc-nZ-Uq4"/>
                                                         <constraint firstAttribute="height" constant="35" id="KWP-Ux-17p"/>
                                                     </constraints>
                                                     <color key="textColor" systemColor="labelColor"/>
@@ -130,6 +141,40 @@
                                             <outlet property="titleImage" destination="2TJ-Vw-I1C" id="0fb-lu-1s1"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell4" rowHeight="100" id="Bgc-S8-gwe" customClass="SuggestionCell" customModule="hemgRecipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="350" width="390" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bgc-S8-gwe" id="g8Q-s7-qR9">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N1p-QD-RZO">
+                                                    <rect key="frame" x="10" y="5" width="90" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="90" id="096-7I-1Qp"/>
+                                                        <constraint firstAttribute="width" constant="90" id="XUN-jt-yMh"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsl-jQ-ser">
+                                                    <rect key="frame" x="109.99999999999999" y="38" width="51.333333333333329" height="24"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="N1p-QD-RZO" firstAttribute="top" secondItem="g8Q-s7-qR9" secondAttribute="top" constant="5" id="8gY-cT-xGH"/>
+                                                <constraint firstItem="dsl-jQ-ser" firstAttribute="centerY" secondItem="N1p-QD-RZO" secondAttribute="centerY" id="OqB-SE-3OI"/>
+                                                <constraint firstItem="N1p-QD-RZO" firstAttribute="leading" secondItem="g8Q-s7-qR9" secondAttribute="leading" constant="10" id="b4Z-vu-2wX"/>
+                                                <constraint firstItem="dsl-jQ-ser" firstAttribute="leading" secondItem="N1p-QD-RZO" secondAttribute="trailing" constant="10" id="oZs-o0-1oa"/>
+                                                <constraint firstAttribute="bottom" secondItem="N1p-QD-RZO" secondAttribute="bottom" constant="5" id="w5t-c3-hPR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="suggestionImageView" destination="N1p-QD-RZO" id="l6p-zI-Q0H"/>
+                                            <outlet property="suggestionLabel" destination="dsl-jQ-ser" id="SPJ-7h-aKa"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="Epg-9J-zIE" id="tWb-Eg-gWB"/>
@@ -147,10 +192,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="김치찌개" id="cKx-Xc-Fsz">
-                        <rightBarButtonItems>
-                            <barButtonItem title="Item" image="square.and.arrow.up" catalog="system" id="cZP-NS-lnp"/>
-                            <barButtonItem title="Item" image="bookmark" catalog="system" id="A2T-E5-PxE"/>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.arrow.up" catalog="system" id="cZP-NS-lnp">
+                            <connections>
+                                <action selector="shared:" destination="Epg-9J-zIE" id="8yx-aW-5e1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="n0Y-Vj-ijn" id="SYo-H8-NUa"/>
@@ -163,7 +209,7 @@
         <!--Navigation Controller-->
         <scene sceneID="in9-Ef-1Q0">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i2Z-xK-RYd" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="a" automaticallyAdjustsScrollViewInsets="NO" id="i2Z-xK-RYd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fLh-IL-KqT">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
@@ -180,7 +226,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bookmark" catalog="system" width="110" height="128"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
