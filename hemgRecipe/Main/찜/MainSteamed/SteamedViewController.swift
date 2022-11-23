@@ -34,6 +34,7 @@ extension SteamedViewController: UICollectionViewDelegate, UICollectionViewDataS
                 cell.steamedLabel.text = "계란찜"
                 cell.difficultyLabel.text = "초급"
                 cell.steamedImageView.image = UIImage(named: "계란찜5")
+                cell.steamedImageView.layer.cornerRadius = cell.steamedImageView.frame.height/2
                 return cell
             }
             else if indexPath.row == 1 {
@@ -41,6 +42,7 @@ extension SteamedViewController: UICollectionViewDelegate, UICollectionViewDataS
                 cell.steamedLabel.text = "찜닭"
                 cell.difficultyLabel.text = "중급"
                 cell.steamedImageView.image = UIImage(named: "찜닭")
+                cell.steamedImageView.layer.cornerRadius = cell.steamedImageView.frame.height/2
                 return cell
             }
             else if indexPath.row == 2 {
@@ -48,6 +50,7 @@ extension SteamedViewController: UICollectionViewDelegate, UICollectionViewDataS
                 cell.steamedLabel.text = "갈비찜"
                 cell.difficultyLabel.text = "중급"
                 cell.steamedImageView.image = UIImage(named: "갈비찜")
+                cell.steamedImageView.layer.cornerRadius = cell.steamedImageView.frame.height/2
                 return cell
             }
         }
@@ -57,6 +60,7 @@ extension SteamedViewController: UICollectionViewDelegate, UICollectionViewDataS
                 cell.steamedLabel.text = "아귀찜"
                 cell.difficultyLabel.text = "상급"
                 cell.steamedImageView.image = UIImage(named: "숲")
+                cell.steamedImageView.layer.cornerRadius = cell.steamedImageView.frame.height/2
                 return cell
             }
             else if indexPath.row == 1 {
@@ -64,6 +68,7 @@ extension SteamedViewController: UICollectionViewDelegate, UICollectionViewDataS
                 cell.steamedLabel.text = "어묵 콩나물찜"
                 cell.difficultyLabel.text = "중급"
                 cell.steamedImageView.image = UIImage(named: "김치3")
+                cell.steamedImageView.layer.cornerRadius = cell.steamedImageView.frame.height/2
                 return cell
             }
             else if indexPath.row == 2 {
@@ -71,6 +76,7 @@ extension SteamedViewController: UICollectionViewDelegate, UICollectionViewDataS
                 cell.steamedLabel.text = "바지락 술찜"
                 cell.difficultyLabel.text = "상급"
                 cell.steamedImageView.image = UIImage(named: "김치1")
+                cell.steamedImageView.layer.cornerRadius = cell.steamedImageView.frame.height/2
                 return cell
             }
         }

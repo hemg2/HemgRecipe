@@ -44,6 +44,9 @@
 		63021F2F292CFB5500B8AB26 /* GalbiJim.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021F2E292CFB5500B8AB26 /* GalbiJim.storyboard */; };
 		63021F31292CFB5E00B8AB26 /* GalbiJimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F30292CFB5E00B8AB26 /* GalbiJimViewController.swift */; };
 		63021F33292CFB6800B8AB26 /* GalbiJimTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F32292CFB6800B8AB26 /* GalbiJimTableViewCell.swift */; };
+		63E234EC292D27D700511B20 /* SoupTitleImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E234EB292D27D700511B20 /* SoupTitleImageTableViewCell.swift */; };
+		63E234EF292DE8AB00511B20 /* MainImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E234EE292DE8AB00511B20 /* MainImageCell.swift */; };
+		63E234F1292DE8D800511B20 /* ExplanationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E234F0292DE8D800511B20 /* ExplanationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +89,9 @@
 		63021F2E292CFB5500B8AB26 /* GalbiJim.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GalbiJim.storyboard; sourceTree = "<group>"; };
 		63021F30292CFB5E00B8AB26 /* GalbiJimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalbiJimViewController.swift; sourceTree = "<group>"; };
 		63021F32292CFB6800B8AB26 /* GalbiJimTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalbiJimTableViewCell.swift; sourceTree = "<group>"; };
+		63E234EB292D27D700511B20 /* SoupTitleImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoupTitleImageTableViewCell.swift; sourceTree = "<group>"; };
+		63E234EE292DE8AB00511B20 /* MainImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImageCell.swift; sourceTree = "<group>"; };
+		63E234F0292DE8D800511B20 /* ExplanationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				63021ECD292A108700B8AB26 /* SoupViewController.swift */,
+				63E234EB292D27D700511B20 /* SoupTitleImageTableViewCell.swift */,
 				63021ED7292A156A00B8AB26 /* SoupTableViewCell.swift */,
 				63021ECF292A109B00B8AB26 /* Soup.storyboard */,
 			);
@@ -176,7 +183,7 @@
 		63021EDB292A225700B8AB26 /* KimchiStew */ = {
 			isa = PBXGroup;
 			children = (
-				63021EE6292BA41500B8AB26 /* FirstExplanationCell.swift */,
+				63E234ED292DE89000511B20 /* Cell */,
 				63021EDC292A228C00B8AB26 /* KimchiStewViewController.swift */,
 				63021EE1292B889A00B8AB26 /* Kimchi.storyboard */,
 			);
@@ -275,6 +282,16 @@
 			path = "갈비찜";
 			sourceTree = "<group>";
 		};
+		63E234ED292DE89000511B20 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				63021EE6292BA41500B8AB26 /* FirstExplanationCell.swift */,
+				63E234EE292DE8AB00511B20 /* MainImageCell.swift */,
+				63E234F0292DE8D800511B20 /* ExplanationCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -361,11 +378,14 @@
 				63021F10292C8E9400B8AB26 /* BeanSproutsTableViewCell.swift in Sources */,
 				63021F33292CFB6800B8AB26 /* GalbiJimTableViewCell.swift in Sources */,
 				63021EFB292BCE7600B8AB26 /* SoftTofuViewController.swift in Sources */,
+				63E234F1292DE8D800511B20 /* ExplanationCell.swift in Sources */,
 				63021EDD292A228C00B8AB26 /* KimchiStewViewController.swift in Sources */,
 				63021EF6292BC7CD00B8AB26 /* MisoTableViewCell.swift in Sources */,
 				63021F29292CF16000B8AB26 /* SteamedChickenViewController.swift in Sources */,
+				63E234EF292DE8AB00511B20 /* MainImageCell.swift in Sources */,
 				63021ED3292A11F700B8AB26 /* SteamedViewController.swift in Sources */,
 				63021EE7292BA41500B8AB26 /* FirstExplanationCell.swift in Sources */,
+				63E234EC292D27D700511B20 /* SoupTitleImageTableViewCell.swift in Sources */,
 				63021F20292CD29700B8AB26 /* EggCustardViewController.swift in Sources */,
 				63021F16292C904900B8AB26 /* SeaweedViewController.swift in Sources */,
 				63021F18292CA7D200B8AB26 /* SteamedCollectionViewCell.swift in Sources */,

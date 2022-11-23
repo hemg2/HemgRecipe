@@ -75,8 +75,8 @@ extension EggCustardViewController: UITableViewDelegate, UITableViewDataSource {
             if indexPath.row == 0 {
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? EggCustardTableViewCell
                  else {fatalError()}
-                 cell.EggCustardImageView.image = UIImage(named: "")
-                 cell.EggCustardTextView.text = ""
+                 cell.EggCustardImageView.image = UIImage(named: "계란찜4")
+                 cell.EggCustardTextView.text = "너무 타지 않게 오래 익히지 않아야 합니다."
                  return cell
             }
         }

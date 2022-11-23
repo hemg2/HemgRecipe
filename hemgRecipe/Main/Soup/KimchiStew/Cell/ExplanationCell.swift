@@ -1,19 +1,17 @@
 //
-//  SoupTableViewCell.swift
+//  ExplanationCell.swift
 //  hemgRecipe
 //
-//  Created by 1 on 2022/11/20.
+//  Created by 1 on 2022/11/23.
 //
 
 import UIKit
 
-class SoupTableViewCell: UITableViewCell {
+class ExplanationCell: UITableViewCell {
 
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var subTitleLabel: UILabel!
-    @IBOutlet weak var peopleLabel: UILabel!
-    @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var titleIamge: UIImageView!
+    
+    @IBOutlet weak var firstTextView: UITextView!
+    @IBOutlet weak var secondTextView: UITextView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
