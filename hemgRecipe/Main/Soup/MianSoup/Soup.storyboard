@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Soup View Controller-->
+        <!--국 류-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="Soup" id="Y6W-OH-hqX" customClass="SoupViewController" customModule="hemgRecipe" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nIS-qo-GQw">
-                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <rect key="frame" x="0.0" y="91" width="390" height="719"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell2" rowHeight="100" id="H9Y-2z-Mpp" customClass="SoupTitleImageTableViewCell" customModule="hemgRecipe" customModuleProvider="target">
@@ -131,7 +131,7 @@
                             <constraint firstItem="nIS-qo-GQw" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="j8g-uG-Km9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="4Cp-Yd-fwg"/>
+                    <navigationItem key="navigationItem" title="국 류" id="4Cp-Yd-fwg"/>
                     <connections>
                         <outlet property="tableView" destination="nIS-qo-GQw" id="kE8-ls-4pY"/>
                     </connections>
@@ -143,9 +143,10 @@
         <!--Navigation Controller-->
         <scene sceneID="Od4-cX-3N4">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="JAW-Rv-TSa" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JAW-Rv-TSa" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Glq-E8-rdy">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

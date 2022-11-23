@@ -14,7 +14,6 @@ class SoupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "국 종류"
     }
 }
 
