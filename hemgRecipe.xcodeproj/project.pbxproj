@@ -48,6 +48,9 @@
 		63E234EF292DE8AB00511B20 /* MainImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E234EE292DE8AB00511B20 /* MainImageCell.swift */; };
 		63E234F1292DE8D800511B20 /* ExplanationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E234F0292DE8D800511B20 /* ExplanationCell.swift */; };
 		63E234F3292DF0DC00511B20 /* SuggestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E234F2292DF0DB00511B20 /* SuggestionCell.swift */; };
+		63E7D7B5292F212E00D1BEA6 /* MisoMainImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7D7B4292F212E00D1BEA6 /* MisoMainImageViewCell.swift */; };
+		63E7D7B7292F214000D1BEA6 /* MisoExplanationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7D7B6292F214000D1BEA6 /* MisoExplanationCell.swift */; };
+		63E7D7B9292F214E00D1BEA6 /* MisoSuggestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7D7B8292F214E00D1BEA6 /* MisoSuggestionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +97,9 @@
 		63E234EE292DE8AB00511B20 /* MainImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImageCell.swift; sourceTree = "<group>"; };
 		63E234F0292DE8D800511B20 /* ExplanationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationCell.swift; sourceTree = "<group>"; };
 		63E234F2292DF0DB00511B20 /* SuggestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionCell.swift; sourceTree = "<group>"; };
+		63E7D7B4292F212E00D1BEA6 /* MisoMainImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisoMainImageViewCell.swift; sourceTree = "<group>"; };
+		63E7D7B6292F214000D1BEA6 /* MisoExplanationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisoExplanationCell.swift; sourceTree = "<group>"; };
+		63E7D7B8292F214E00D1BEA6 /* MisoSuggestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisoSuggestionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +191,7 @@
 		63021EDB292A225700B8AB26 /* KimchiStew */ = {
 			isa = PBXGroup;
 			children = (
-				63E234ED292DE89000511B20 /* Cell */,
+				63E234ED292DE89000511B20 /* KimchiCell */,
 				63021EDC292A228C00B8AB26 /* KimchiStewViewController.swift */,
 				63021EE1292B889A00B8AB26 /* Kimchi.storyboard */,
 			);
@@ -195,7 +201,7 @@
 		63021EEC292BAB7500B8AB26 /* Miso */ = {
 			isa = PBXGroup;
 			children = (
-				63021EF5292BC7CD00B8AB26 /* MisoTableViewCell.swift */,
+				63E7D7B3292F210400D1BEA6 /* MisoCell */,
 				63021EDF292B861300B8AB26 /* MisoStewViewController.swift */,
 				63021EE3292B89BF00B8AB26 /* Miso.storyboard */,
 			);
@@ -284,7 +290,7 @@
 			path = "갈비찜";
 			sourceTree = "<group>";
 		};
-		63E234ED292DE89000511B20 /* Cell */ = {
+		63E234ED292DE89000511B20 /* KimchiCell */ = {
 			isa = PBXGroup;
 			children = (
 				63021EE6292BA41500B8AB26 /* FirstExplanationCell.swift */,
@@ -292,7 +298,18 @@
 				63E234F0292DE8D800511B20 /* ExplanationCell.swift */,
 				63E234F2292DF0DB00511B20 /* SuggestionCell.swift */,
 			);
-			path = Cell;
+			path = KimchiCell;
+			sourceTree = "<group>";
+		};
+		63E7D7B3292F210400D1BEA6 /* MisoCell */ = {
+			isa = PBXGroup;
+			children = (
+				63E7D7B4292F212E00D1BEA6 /* MisoMainImageViewCell.swift */,
+				63E7D7B6292F214000D1BEA6 /* MisoExplanationCell.swift */,
+				63021EF5292BC7CD00B8AB26 /* MisoTableViewCell.swift */,
+				63E7D7B8292F214E00D1BEA6 /* MisoSuggestionCell.swift */,
+			);
+			path = MisoCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,9 +406,11 @@
 				63E234EF292DE8AB00511B20 /* MainImageCell.swift in Sources */,
 				63021ED3292A11F700B8AB26 /* SteamedViewController.swift in Sources */,
 				63021EE7292BA41500B8AB26 /* FirstExplanationCell.swift in Sources */,
+				63E7D7B7292F214000D1BEA6 /* MisoExplanationCell.swift in Sources */,
 				63E234EC292D27D700511B20 /* SoupTitleImageTableViewCell.swift in Sources */,
 				63021F20292CD29700B8AB26 /* EggCustardViewController.swift in Sources */,
 				63021F16292C904900B8AB26 /* SeaweedViewController.swift in Sources */,
+				63E7D7B9292F214E00D1BEA6 /* MisoSuggestionCell.swift in Sources */,
 				63021F18292CA7D200B8AB26 /* SteamedCollectionViewCell.swift in Sources */,
 				63021F27292CF14F00B8AB26 /* SteamedChickenTableViewCell.swift in Sources */,
 				63021EB42929DCFF00B8AB26 /* AppDelegate.swift in Sources */,
@@ -400,6 +419,7 @@
 				63021F06292C8D5C00B8AB26 /* BeanSproutsViewController.swift in Sources */,
 				63021EB62929DCFF00B8AB26 /* SceneDelegate.swift in Sources */,
 				63021EF9292BCE6000B8AB26 /* SoftTofuTableViewCell.swift in Sources */,
+				63E7D7B5292F212E00D1BEA6 /* MisoMainImageViewCell.swift in Sources */,
 				63021EE0292B861300B8AB26 /* MisoStewViewController.swift in Sources */,
 				63021ECE292A108700B8AB26 /* SoupViewController.swift in Sources */,
 				63021EC92929E25300B8AB26 /* MainCollectionViewCell.swift in Sources */,

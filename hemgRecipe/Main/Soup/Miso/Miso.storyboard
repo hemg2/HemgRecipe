@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Miso Stew View Controller-->
+        <!--된장찌개-->
         <scene sceneID="TZa-oe-vt5">
             <objects>
                 <viewController storyboardIdentifier="Miso" id="gul-qd-UEs" customClass="MisoStewViewController" customModule="hemgRecipe" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,11 +18,78 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fVZ-DR-6ga">
-                                <rect key="frame" x="0.0" y="47" width="390" height="797"/>
+                                <rect key="frame" x="0.0" y="91" width="390" height="753"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" rowHeight="100" id="zgf-2u-Rwo" customClass="MisoTableViewCell" customModule="hemgRecipe" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="Ylw-QQ-9I6" customClass="MisoMainImageViewCell" customModule="hemgRecipe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="390" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ylw-QQ-9I6" id="t6T-iB-NpE">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cRj-QY-JKR">
+                                                    <rect key="frame" x="10" y="5" width="370" height="90"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="cRj-QY-JKR" secondAttribute="trailing" constant="10" id="Fky-MQ-fE3"/>
+                                                <constraint firstAttribute="bottom" secondItem="cRj-QY-JKR" secondAttribute="bottom" constant="5" id="mAY-xN-aY2"/>
+                                                <constraint firstItem="cRj-QY-JKR" firstAttribute="top" secondItem="t6T-iB-NpE" secondAttribute="top" constant="5" id="mwg-6T-01x"/>
+                                                <constraint firstItem="cRj-QY-JKR" firstAttribute="leading" secondItem="t6T-iB-NpE" secondAttribute="leading" constant="10" id="s99-wu-QTm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="misoMainIamgeView" destination="cRj-QY-JKR" id="mQ3-yV-etV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" rowHeight="100" id="2ee-Ud-LTc" customClass="MisoExplanationCell" customModule="hemgRecipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="150" width="390" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2ee-Ud-LTc" id="mKu-91-vtp">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="370" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mCX-MQ-jbd">
+                                                    <rect key="frame" x="10" y="10" width="370" height="35"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="Z5E-gy-IBX"/>
+                                                        <constraint firstAttribute="width" constant="370" id="yF3-1C-33m"/>
+                                                    </constraints>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="35" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vTy-Ru-287">
+                                                    <rect key="frame" x="10" y="55" width="370" height="35"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="DoL-Gw-lLW"/>
+                                                        <constraint firstAttribute="width" constant="370" id="iAZ-cd-6Yl"/>
+                                                    </constraints>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="vTy-Ru-287" secondAttribute="trailing" constant="10" id="5hb-Vm-dCB"/>
+                                                <constraint firstItem="mCX-MQ-jbd" firstAttribute="top" secondItem="mKu-91-vtp" secondAttribute="top" constant="10" id="Uch-OL-jly"/>
+                                                <constraint firstItem="vTy-Ru-287" firstAttribute="leading" secondItem="mKu-91-vtp" secondAttribute="leading" constant="10" id="aUw-3v-NRJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="mCX-MQ-jbd" secondAttribute="trailing" constant="10" id="bGA-E6-vFx"/>
+                                                <constraint firstItem="vTy-Ru-287" firstAttribute="top" secondItem="mCX-MQ-jbd" secondAttribute="bottom" constant="10" id="bpF-B0-0de"/>
+                                                <constraint firstItem="mCX-MQ-jbd" firstAttribute="leading" secondItem="mKu-91-vtp" secondAttribute="leading" constant="10" id="dvb-Gm-Vf5"/>
+                                                <constraint firstAttribute="bottom" secondItem="vTy-Ru-287" secondAttribute="bottom" constant="10" id="iV6-Cx-30K"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="subTitleTextView" destination="vTy-Ru-287" id="TS5-J2-0rc"/>
+                                            <outlet property="titleTextView" destination="mCX-MQ-jbd" id="5KX-Rl-0aa"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell2" rowHeight="100" id="zgf-2u-Rwo" customClass="MisoTableViewCell" customModule="hemgRecipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="250" width="390" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zgf-2u-Rwo" id="Q5b-2x-9Zc">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
@@ -61,6 +128,40 @@
                                             <outlet property="misoTextView" destination="6Gj-yN-2VV" id="ntX-sm-Hmw"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell3" rowHeight="100" id="Cbe-hf-AIG" customClass="MisoSuggestionCell" customModule="hemgRecipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="350" width="390" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cbe-hf-AIG" id="lyn-rR-g57">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cwb-h3-o7F">
+                                                    <rect key="frame" x="20" y="0.0" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="Ez9-Tp-YxP"/>
+                                                        <constraint firstAttribute="width" constant="100" id="pol-dm-hME"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8q-4D-zh4">
+                                                    <rect key="frame" x="130" y="38" width="23" height="24"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="B8q-4D-zh4" firstAttribute="leading" secondItem="Cwb-h3-o7F" secondAttribute="trailing" constant="10" id="1On-n8-Z1L"/>
+                                                <constraint firstAttribute="bottom" secondItem="Cwb-h3-o7F" secondAttribute="bottom" id="DRu-qb-IQP"/>
+                                                <constraint firstItem="B8q-4D-zh4" firstAttribute="centerY" secondItem="lyn-rR-g57" secondAttribute="centerY" id="Pyp-wN-iL4"/>
+                                                <constraint firstItem="Cwb-h3-o7F" firstAttribute="top" secondItem="lyn-rR-g57" secondAttribute="top" id="hV6-x5-8VN"/>
+                                                <constraint firstItem="Cwb-h3-o7F" firstAttribute="leading" secondItem="lyn-rR-g57" secondAttribute="leading" constant="20" id="y6H-4V-dYF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="misoSuggestionImageView" destination="Cwb-h3-o7F" id="LDR-mv-pIe"/>
+                                            <outlet property="misoSuggestionLabel" destination="B8q-4D-zh4" id="oFs-5z-6sl"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="gul-qd-UEs" id="DRx-49-fo5"/>
@@ -77,14 +178,39 @@
                             <constraint firstItem="fVZ-DR-6ga" firstAttribute="leading" secondItem="faQ-62-lmf" secondAttribute="leading" id="uL2-fx-ci1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ekO-8X-qh2"/>
+                    <navigationItem key="navigationItem" title="된장찌개" id="ekO-8X-qh2">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.arrow.up" catalog="system" id="107-XZ-N5F">
+                            <connections>
+                                <action selector="shared:" destination="gul-qd-UEs" id="CRw-a6-bAE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pth-X5-Pqk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4955.3846153846152" y="187.67772511848341"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ori-m4-Ij9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="njM-rY-YS5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zie-j5-xhV">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gul-qd-UEs" kind="relationship" relationship="rootViewController" id="x6x-eY-SVr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TH5-Pk-y4l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4026.1538461538462" y="187.67772511848341"/>
         </scene>
     </scenes>
     <resources>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -38,7 +38,7 @@ extension SoupViewController: UITableViewDataSource, UITableViewDelegate {
         if indexPath.section == 0 {
             if indexPath.row == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "cell2") as! SoupTitleImageTableViewCell
-                cell.titleImageView.image = UIImage(named: "스플레시")
+                cell.titleImageView.image = UIImage(named: "된장재료")
                 
                 return cell
             }

@@ -30,17 +30,13 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oxx-oy-lLQ">
                                                     <rect key="frame" x="10" y="5" width="370" height="90"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="90" id="O9f-yi-W6R"/>
-                                                        <constraint firstAttribute="width" constant="370" id="tqS-qT-7AF"/>
-                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="oxx-oy-lLQ" firstAttribute="centerX" secondItem="4fQ-5C-I5f" secondAttribute="centerX" id="6Qg-hu-XnK"/>
-                                                <constraint firstItem="oxx-oy-lLQ" firstAttribute="centerY" secondItem="4fQ-5C-I5f" secondAttribute="centerY" id="N7k-tH-Kha"/>
-                                                <constraint firstAttribute="bottom" secondItem="oxx-oy-lLQ" secondAttribute="bottom" constant="5" id="PYg-oX-caB"/>
-                                                <constraint firstItem="oxx-oy-lLQ" firstAttribute="top" secondItem="4fQ-5C-I5f" secondAttribute="top" constant="5" id="fhx-TM-ou8"/>
+                                                <constraint firstAttribute="trailing" secondItem="oxx-oy-lLQ" secondAttribute="trailing" constant="10" id="mev-Aa-pRR"/>
+                                                <constraint firstItem="oxx-oy-lLQ" firstAttribute="leading" secondItem="4fQ-5C-I5f" secondAttribute="leading" constant="10" id="pR3-XJ-jWS"/>
+                                                <constraint firstAttribute="bottom" secondItem="oxx-oy-lLQ" secondAttribute="bottom" constant="5" id="pdG-qi-DA5"/>
+                                                <constraint firstItem="oxx-oy-lLQ" firstAttribute="top" secondItem="4fQ-5C-I5f" secondAttribute="top" constant="5" id="u7M-J0-J7p"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
