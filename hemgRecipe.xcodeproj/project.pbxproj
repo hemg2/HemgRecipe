@@ -57,6 +57,9 @@
 		63E7D7C3292F44F500D1BEA6 /* SeaweedMainIamgeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7D7C2292F44F500D1BEA6 /* SeaweedMainIamgeCell.swift */; };
 		63E7D7C5292F451400D1BEA6 /* SeaweedExplanationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7D7C4292F451400D1BEA6 /* SeaweedExplanationCell.swift */; };
 		63E7D7C7292F452200D1BEA6 /* SeaweedSuggestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7D7C6292F452200D1BEA6 /* SeaweedSuggestionCell.swift */; };
+		63E7D7CA292F502900D1BEA6 /* BeanSproutsMainImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7D7C9292F502900D1BEA6 /* BeanSproutsMainImageViewCell.swift */; };
+		63E7D7CC292F505400D1BEA6 /* BeanSproutsExplanationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7D7CB292F505400D1BEA6 /* BeanSproutsExplanationCell.swift */; };
+		63E7D7CE292F506A00D1BEA6 /* BeanSproutsSuggestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7D7CD292F506A00D1BEA6 /* BeanSproutsSuggestionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +115,9 @@
 		63E7D7C2292F44F500D1BEA6 /* SeaweedMainIamgeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaweedMainIamgeCell.swift; sourceTree = "<group>"; };
 		63E7D7C4292F451400D1BEA6 /* SeaweedExplanationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaweedExplanationCell.swift; sourceTree = "<group>"; };
 		63E7D7C6292F452200D1BEA6 /* SeaweedSuggestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaweedSuggestionCell.swift; sourceTree = "<group>"; };
+		63E7D7C9292F502900D1BEA6 /* BeanSproutsMainImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanSproutsMainImageViewCell.swift; sourceTree = "<group>"; };
+		63E7D7CB292F505400D1BEA6 /* BeanSproutsExplanationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanSproutsExplanationCell.swift; sourceTree = "<group>"; };
+		63E7D7CD292F506A00D1BEA6 /* BeanSproutsSuggestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanSproutsSuggestionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,7 +249,7 @@
 		63021EFF292C8CBC00B8AB26 /* BeanSprouts */ = {
 			isa = PBXGroup;
 			children = (
-				63021F0F292C8E9400B8AB26 /* BeanSproutsTableViewCell.swift */,
+				63E7D7C8292F4C6B00D1BEA6 /* Cell */,
 				63021F05292C8D5C00B8AB26 /* BeanSproutsViewController.swift */,
 				63021F0B292C8D9900B8AB26 /* BeanSprouts.storyboard */,
 			);
@@ -346,6 +352,17 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		63E7D7C8292F4C6B00D1BEA6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				63E7D7C9292F502900D1BEA6 /* BeanSproutsMainImageViewCell.swift */,
+				63E7D7CB292F505400D1BEA6 /* BeanSproutsExplanationCell.swift */,
+				63021F0F292C8E9400B8AB26 /* BeanSproutsTableViewCell.swift */,
+				63E7D7CD292F506A00D1BEA6 /* BeanSproutsSuggestionCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -440,7 +457,9 @@
 				63021EDD292A228C00B8AB26 /* KimchiStewViewController.swift in Sources */,
 				63021EF6292BC7CD00B8AB26 /* MisoTableViewCell.swift in Sources */,
 				63021F29292CF16000B8AB26 /* SteamedChickenViewController.swift in Sources */,
+				63E7D7CC292F505400D1BEA6 /* BeanSproutsExplanationCell.swift in Sources */,
 				63E7D7C5292F451400D1BEA6 /* SeaweedExplanationCell.swift in Sources */,
+				63E7D7CA292F502900D1BEA6 /* BeanSproutsMainImageViewCell.swift in Sources */,
 				63E234EF292DE8AB00511B20 /* MainImageCell.swift in Sources */,
 				63021ED3292A11F700B8AB26 /* SteamedViewController.swift in Sources */,
 				63021EE7292BA41500B8AB26 /* FirstExplanationCell.swift in Sources */,
@@ -449,6 +468,7 @@
 				63021F20292CD29700B8AB26 /* EggCustardViewController.swift in Sources */,
 				63021F16292C904900B8AB26 /* SeaweedViewController.swift in Sources */,
 				63E7D7B9292F214E00D1BEA6 /* MisoSuggestionCell.swift in Sources */,
+				63E7D7CE292F506A00D1BEA6 /* BeanSproutsSuggestionCell.swift in Sources */,
 				63021F18292CA7D200B8AB26 /* SteamedCollectionViewCell.swift in Sources */,
 				63021F27292CF14F00B8AB26 /* SteamedChickenTableViewCell.swift in Sources */,
 				63021EB42929DCFF00B8AB26 /* AppDelegate.swift in Sources */,

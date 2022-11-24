@@ -154,7 +154,7 @@ extension SoupViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         //        return sections[section]
         switch section {
-        case 0: return ""
+        case 0: return "메인이미지 광고?"
         case 1: return "찌개류"
         case 2: return "국류"
         case 3: return "기타"

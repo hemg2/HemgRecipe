@@ -65,7 +65,6 @@ extension KimchiStewViewController: UITableViewDataSource, UITableViewDelegate {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell2") as! MainImageCell
             cell.MainImageView.image = UIImage(named: "김치재료")
-//            cell.representativeImageView.image = UIImage(named: "김치찌개메인")
             return cell
         }
         if indexPath.section == 1 {
@@ -78,22 +77,26 @@ extension KimchiStewViewController: UITableViewDataSource, UITableViewDelegate {
             if indexPath.row == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! FirstExplanationCell
                 cell.titleImage.image = UIImage(named: "김치1")
+                cell.titleImage.layer.cornerRadius = cell.titleImage.frame.height/2
                 cell.textView.text = "두부, 김치, 대파 한입 크기 썰기 "
                 return cell
             } else if indexPath.row == 1 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! FirstExplanationCell
                 cell.titleImage.image = UIImage(named: "김치2")
+                cell.titleImage.layer.cornerRadius = cell.titleImage.frame.height/2
                 cell.textView.text = "냄비에 김치를 2~3분 볶은후, 물 500ml 넣은뒤 10분 정도 끊여준다."
                 return cell
             } else if indexPath.row == 2 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! FirstExplanationCell
                 cell.titleImage.image = UIImage(named: "김치3")
+                cell.titleImage.layer.cornerRadius = cell.titleImage.frame.height/2
                 cell.textView.text = "두부와 대파를 넣고 2분 정도 더 끓이면 완성!"
                 return cell
             }
         } else if indexPath.section == 3 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! FirstExplanationCell
             cell.titleImage.image = UIImage(named: "김치2")
+            cell.titleImage.layer.cornerRadius = cell.titleImage.frame.height/2
             cell.textView.text = "김치가 너무 타지 않도록 하기"
             return cell
         } else if indexPath.section == 4 {

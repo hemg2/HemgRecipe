@@ -20,9 +20,91 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JiG-DP-qv1">
                                 <rect key="frame" x="0.0" y="47" width="390" height="797"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="nAJ-pe-mjx">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <items>
+                                        <navigationItem title="콩나물 국" id="7sM-gM-sTY">
+                                            <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.arrow.up" catalog="system" id="Drc-KP-Qa4">
+                                                <connections>
+                                                    <action selector="shared:" destination="nDA-3m-Zz8" id="yJy-Wk-wz7"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </navigationItem>
+                                    </items>
+                                </navigationBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="k7R-FL-rTx" customClass="BeanSproutsTableViewCell" customModule="hemgRecipe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="390" height="100"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="teS-Ks-425" customClass="BeanSproutsMainImageViewCell" customModule="hemgRecipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="94" width="390" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="teS-Ks-425" id="tKw-Wv-e55">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z8I-VI-6v6">
+                                                    <rect key="frame" x="10" y="5" width="370" height="90"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="z8I-VI-6v6" firstAttribute="top" secondItem="tKw-Wv-e55" secondAttribute="top" constant="5" id="PJK-3M-gE3"/>
+                                                <constraint firstAttribute="trailing" secondItem="z8I-VI-6v6" secondAttribute="trailing" constant="10" id="R8C-tV-y9o"/>
+                                                <constraint firstItem="z8I-VI-6v6" firstAttribute="leading" secondItem="tKw-Wv-e55" secondAttribute="leading" constant="10" id="dxg-5G-wc4"/>
+                                                <constraint firstAttribute="bottom" secondItem="z8I-VI-6v6" secondAttribute="bottom" constant="5" id="ypy-Fa-Shx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mainImageView" destination="z8I-VI-6v6" id="zJx-gC-YPX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" rowHeight="100" id="4Fs-uY-XPQ" customClass="BeanSproutsExplanationCell" customModule="hemgRecipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="194" width="390" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Fs-uY-XPQ" id="nDV-12-STa">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Add-H3-bOt">
+                                                    <rect key="frame" x="10" y="10" width="370" height="40"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="Nwz-ae-fxF"/>
+                                                        <constraint firstAttribute="width" constant="370" id="zog-gn-6vR"/>
+                                                    </constraints>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qNs-jN-5nW">
+                                                    <rect key="frame" x="10" y="50" width="370" height="40"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="5mb-ad-JjE"/>
+                                                        <constraint firstAttribute="width" constant="370" id="OVx-GB-lX5"/>
+                                                    </constraints>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Add-H3-bOt" firstAttribute="leading" secondItem="nDV-12-STa" secondAttribute="leading" constant="10" id="4ZP-t7-Y7W"/>
+                                                <constraint firstAttribute="trailing" secondItem="Add-H3-bOt" secondAttribute="trailing" constant="10" id="GjT-8n-fDb"/>
+                                                <constraint firstAttribute="bottom" secondItem="qNs-jN-5nW" secondAttribute="bottom" constant="10" id="cvR-Rw-htd"/>
+                                                <constraint firstItem="Add-H3-bOt" firstAttribute="top" secondItem="nDV-12-STa" secondAttribute="top" constant="10" id="gPT-Mk-Pvl"/>
+                                                <constraint firstItem="qNs-jN-5nW" firstAttribute="leading" secondItem="nDV-12-STa" secondAttribute="leading" constant="10" id="p5d-BA-8JB"/>
+                                                <constraint firstItem="qNs-jN-5nW" firstAttribute="top" secondItem="Add-H3-bOt" secondAttribute="bottom" id="qwX-Lv-MVK"/>
+                                                <constraint firstAttribute="trailing" secondItem="qNs-jN-5nW" secondAttribute="trailing" constant="10" id="snb-Os-QeF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="subTitleTextView" destination="qNs-jN-5nW" id="k7j-LT-lM7"/>
+                                            <outlet property="titleTextView" destination="Add-H3-bOt" id="Ou9-AA-lYF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell2" rowHeight="100" id="k7R-FL-rTx" customClass="BeanSproutsTableViewCell" customModule="hemgRecipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="294" width="390" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k7R-FL-rTx" id="7QQ-gi-adE">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
@@ -61,6 +143,40 @@
                                             <outlet property="BeanSproutsTextView" destination="kmF-eX-7Yg" id="wtj-nA-RWC"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell3" rowHeight="100" id="GYv-lE-sRb" customClass="BeanSproutsSuggestionCell" customModule="hemgRecipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="394" width="390" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GYv-lE-sRb" id="Sdj-N7-1l1">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wHK-4m-6EC">
+                                                    <rect key="frame" x="20" y="0.0" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="Nep-4T-9kr"/>
+                                                        <constraint firstAttribute="width" constant="100" id="vaZ-Wq-sPI"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rba-0L-CT6">
+                                                    <rect key="frame" x="140" y="38" width="51.333333333333343" height="24"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wHK-4m-6EC" firstAttribute="top" secondItem="Sdj-N7-1l1" secondAttribute="top" id="9gX-8M-P02"/>
+                                                <constraint firstAttribute="bottom" secondItem="wHK-4m-6EC" secondAttribute="bottom" id="H25-6l-0Z3"/>
+                                                <constraint firstItem="Rba-0L-CT6" firstAttribute="leading" secondItem="wHK-4m-6EC" secondAttribute="trailing" constant="20" id="Pbl-1O-hQJ"/>
+                                                <constraint firstItem="wHK-4m-6EC" firstAttribute="leading" secondItem="Sdj-N7-1l1" secondAttribute="leading" constant="20" id="fFU-3r-BZF"/>
+                                                <constraint firstItem="Rba-0L-CT6" firstAttribute="centerY" secondItem="Sdj-N7-1l1" secondAttribute="centerY" id="leB-bc-h9x"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="suggestionImageView" destination="wHK-4m-6EC" id="lUi-5v-wTV"/>
+                                            <outlet property="suggestionLabel" destination="Rba-0L-CT6" id="Hzd-3N-QQD"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
@@ -83,6 +199,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
