@@ -9,6 +9,7 @@ import UIKit
 
 class MainViewController: UIViewController {
     private var list = ["국&찌개", "찜&탕", "라이스", "파스타", "반찬"]
+    private var bestList = ["김치찌개", "계란찜", "미역국", "된장찌개"]
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -26,39 +27,66 @@ class MainViewController: UIViewController {
 
 extension MainViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return list.count
+        if section == 0 {
+            return list.count
+        } else if section == 1 {
+            return bestList.count
+        }
+        return 0
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? MainCollectionViewCell else { fatalError() }
-        if indexPath.row == 0 {
-            cell.MainImageView.image = UIImage(named: "김치찌개메인")
-//            cell.MainImageView.layer.cornerRadius = cell.MainImageView.frame.height/2
-            cell.titleLabel.text = list[indexPath.row]
+        if indexPath.section == 0 {
+            if indexPath.row == 0 {
+                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? MainCollectionViewCell else { fatalError() }
+                cell.MainImageView.image = UIImage(named: "김치찌개메인")
+                //            cell.MainImageView.layer.cornerRadius = cell.MainImageView.frame.height/2
+                cell.titleLabel.text = list[indexPath.row]
+                return cell
+            }
+            if indexPath.row == 1 {
+                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? MainCollectionViewCell else { fatalError() }
+                cell.MainImageView.image = UIImage(named: "찜")
+                //            cell.MainImageView.layer.cornerRadius = cell.MainImageView.frame.height/2
+                cell.titleLabel.text = list[indexPath.row]
+                return cell
+            }
+            if indexPath.row == 2 {
+                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? MainCollectionViewCell else { fatalError() }
+                cell.MainImageView.image = UIImage(named: "밥")
+                //            cell.MainImageView.layer.cornerRadius = cell.MainImageView.frame.height/2
+                cell.titleLabel.text = list[indexPath.row]
+                return cell
+            }
+            if indexPath.row == 3 {
+                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? MainCollectionViewCell else { fatalError() }
+                cell.MainImageView.image = UIImage(named: "파스타")
+                //            cell.MainImageView.layer.cornerRadius = cell.MainImageView.frame.height/2
+                cell.titleLabel.text = list[indexPath.row]
+                return cell
+            }
+            if indexPath.row == 4 {
+                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? MainCollectionViewCell else { fatalError() }
+                cell.MainImageView.image = UIImage(named: "반찬")
+                //            cell.MainImageView.layer.cornerRadius = cell.MainImageView.frame.height/2
+                cell.titleLabel.text = list[indexPath.row]
+                return cell
+            }
         }
-        if indexPath.row == 1 {
-            cell.MainImageView.image = UIImage(named: "찜")
-//            cell.MainImageView.layer.cornerRadius = cell.MainImageView.frame.height/2
-            cell.titleLabel.text = list[indexPath.row]
+        if indexPath.section == 1 {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell1", for: indexPath) as? SubMainCollectionViewCell else { fatalError() }
+            cell.subImageView.image = UIImage(named: "숲")
+            //            cell.MainImageView.layer.cornerRadius = cell.MainImageView.frame.height/2
+            cell.subLabel.text = bestList[indexPath.row]
+            return cell
         }
-        if indexPath.row == 2 {
-            cell.MainImageView.image = UIImage(named: "밥")
-//            cell.MainImageView.layer.cornerRadius = cell.MainImageView.frame.height/2
-            cell.titleLabel.text = list[indexPath.row]
-        }
-        if indexPath.row == 3 {
-            cell.MainImageView.image = UIImage(named: "파스타")
-//            cell.MainImageView.layer.cornerRadius = cell.MainImageView.frame.height/2
-            cell.titleLabel.text = list[indexPath.row]
-        }
-        if indexPath.row == 4 {
-            cell.MainImageView.image = UIImage(named: "반찬")
-//            cell.MainImageView.layer.cornerRadius = cell.MainImageView.frame.height/2
-            cell.titleLabel.text = list[indexPath.row]
-        }
-        return cell
+        return UICollectionViewCell()
     }
+    
+//    func numberOfSections(in collectionView: UICollectionView) -> Int {
+//        return 2
+//    }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)

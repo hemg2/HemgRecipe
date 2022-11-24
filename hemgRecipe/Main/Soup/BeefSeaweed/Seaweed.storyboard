@@ -194,7 +194,7 @@
         <!--Navigation Controller-->
         <scene sceneID="9MC-Dr-EI5">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mfa-eo-a60" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="h" automaticallyAdjustsScrollViewInsets="NO" id="Mfa-eo-a60" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="woC-ac-tdg">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
