@@ -1,17 +1,16 @@
 //
-//  MainImageCell.swift
+//  SeaweedSuggestionCell.swift
 //  hemgRecipe
 //
-//  Created by 1 on 2022/11/23.
+//  Created by 1 on 2022/11/24.
 //
 
 import UIKit
 
-class MainImageCell: UITableViewCell {
+class SeaweedSuggestionCell: UITableViewCell {
 
-    
-    @IBOutlet weak var MainImageView: UIImageView!
-    
+    @IBOutlet weak var seaweedSuggestionIamgeView: UIImageView!
+    @IBOutlet weak var seaweedSuggestionLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

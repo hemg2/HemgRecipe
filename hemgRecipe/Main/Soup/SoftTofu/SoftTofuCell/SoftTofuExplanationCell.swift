@@ -1,18 +1,15 @@
 //
-//  MainImageCell.swift
+//  SoftTofuExplanationCell.swift
 //  hemgRecipe
 //
-//  Created by 1 on 2022/11/23.
+//  Created by 1 on 2022/11/24.
 //
 
 import UIKit
 
-class MainImageCell: UITableViewCell {
-
-    
-    @IBOutlet weak var MainImageView: UIImageView!
-    
-    
+class SoftTofuExplanationCell: UITableViewCell {
+    @IBOutlet weak var titleTextView: UITextView!
+    @IBOutlet weak var subtitleTextView: UITextView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

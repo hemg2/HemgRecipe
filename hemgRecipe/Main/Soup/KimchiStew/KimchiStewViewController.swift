@@ -47,7 +47,7 @@ extension KimchiStewViewController: UITableViewDataSource, UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
-        case 0: return "김치찌개 이미지"
+        case 0: return "재료 이미지"
         case 1: return "재료 구성"
         case 2: return "조리 순서"
         case 3: return "중요 포인트"
@@ -65,7 +65,7 @@ extension KimchiStewViewController: UITableViewDataSource, UITableViewDelegate {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell2") as! MainImageCell
             cell.MainImageView.image = UIImage(named: "김치재료")
-            cell.representativeImageView.image = UIImage(named: "김치찌개메인")
+//            cell.representativeImageView.image = UIImage(named: "김치찌개메인")
             return cell
         }
         if indexPath.section == 1 {

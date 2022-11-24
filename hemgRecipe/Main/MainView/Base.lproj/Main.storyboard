@@ -100,7 +100,7 @@
         <!--Navigation Controller-->
         <scene sceneID="wyi-kj-6SL">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qa2-nN-eTZ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="c" automaticallyAdjustsScrollViewInsets="NO" id="Qa2-nN-eTZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Arz-tG-SSG">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>

@@ -1,17 +1,16 @@
 //
-//  MainImageCell.swift
+//  SoftTofuSuggestionCell.swift
 //  hemgRecipe
 //
-//  Created by 1 on 2022/11/23.
+//  Created by 1 on 2022/11/24.
 //
 
 import UIKit
 
-class MainImageCell: UITableViewCell {
-
+class SoftTofuSuggestionCell: UITableViewCell {
     
-    @IBOutlet weak var MainImageView: UIImageView!
-    
+    @IBOutlet weak var SoftTofuSuggestionImageView: UIImageView!
+    @IBOutlet weak var SoftTofuSuggestionLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

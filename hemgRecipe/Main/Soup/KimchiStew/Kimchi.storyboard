@@ -29,33 +29,18 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ttq-0p-ndT">
-                                                    <rect key="frame" x="5" y="5" width="170" height="90"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="170" id="XRv-sO-iOe"/>
-                                                        <constraint firstAttribute="height" constant="90" id="ZIS-Xs-IKC"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qLa-Md-X9g">
-                                                    <rect key="frame" x="185" y="5" width="200" height="90"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="170" id="Qim-QS-mBG"/>
-                                                        <constraint firstAttribute="height" constant="90" id="mnS-dp-4xj"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="10" y="5" width="370" height="90"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="qLa-Md-X9g" firstAttribute="top" secondItem="ZbS-e2-lEP" secondAttribute="top" constant="5" id="FKa-UM-W5F"/>
-                                                <constraint firstItem="qLa-Md-X9g" firstAttribute="leading" secondItem="Ttq-0p-ndT" secondAttribute="trailing" constant="10" id="Soz-L8-cbj"/>
-                                                <constraint firstAttribute="bottom" secondItem="Ttq-0p-ndT" secondAttribute="bottom" constant="5" id="Wzs-6B-8u7"/>
-                                                <constraint firstAttribute="trailing" secondItem="qLa-Md-X9g" secondAttribute="trailing" constant="5" id="cYM-8W-3LL"/>
-                                                <constraint firstAttribute="bottom" secondItem="qLa-Md-X9g" secondAttribute="bottom" constant="5" id="iNv-1R-6Tg"/>
-                                                <constraint firstItem="Ttq-0p-ndT" firstAttribute="leading" secondItem="ZbS-e2-lEP" secondAttribute="leading" constant="5" id="q3I-SN-4LN"/>
-                                                <constraint firstItem="Ttq-0p-ndT" firstAttribute="top" secondItem="ZbS-e2-lEP" secondAttribute="top" constant="5" id="ska-hL-eru"/>
+                                                <constraint firstItem="Ttq-0p-ndT" firstAttribute="leading" secondItem="ZbS-e2-lEP" secondAttribute="leading" constant="10" id="5OD-v8-L9B"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ttq-0p-ndT" secondAttribute="trailing" constant="10" id="GfK-hn-gvu"/>
+                                                <constraint firstItem="Ttq-0p-ndT" firstAttribute="top" secondItem="ZbS-e2-lEP" secondAttribute="top" constant="5" id="NhS-CE-JRk"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ttq-0p-ndT" secondAttribute="bottom" constant="5" id="b5z-2V-5d3"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="MainImageView" destination="Ttq-0p-ndT" id="doK-YI-78o"/>
-                                            <outlet property="representativeImageView" destination="qLa-Md-X9g" id="f4P-zb-jEF"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" rowHeight="100" id="1BA-xO-Ldv" customClass="ExplanationCell" customModule="hemgRecipe" customModuleProvider="target">
