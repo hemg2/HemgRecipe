@@ -83,7 +83,7 @@ extension SteamedViewController: UICollectionViewDelegate, UICollectionViewDataS
         return UICollectionViewCell()
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 2
+        return 3
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)

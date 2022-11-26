@@ -84,9 +84,9 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
         return UICollectionViewCell()
     }
     
-//    func numberOfSections(in collectionView: UICollectionView) -> Int {
-//        return 2
-//    }
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
+    }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
