@@ -179,11 +179,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="된장찌개" id="ekO-8X-qh2">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.arrow.up" catalog="system" id="107-XZ-N5F">
-                            <connections>
-                                <action selector="shared:" destination="gul-qd-UEs" id="CRw-a6-bAE"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="square.and.arrow.up" catalog="system" id="107-XZ-N5F">
+                                <connections>
+                                    <action selector="shared:" destination="gul-qd-UEs" id="CRw-a6-bAE"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="timer" catalog="system" id="kXC-wB-TZ4"/>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pth-X5-Pqk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -211,6 +214,7 @@
     </scenes>
     <resources>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="timer" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

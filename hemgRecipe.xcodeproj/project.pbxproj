@@ -45,6 +45,8 @@
 		63021F31292CFB5E00B8AB26 /* GalbiJimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F30292CFB5E00B8AB26 /* GalbiJimViewController.swift */; };
 		63021F33292CFB6800B8AB26 /* GalbiJimTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021F32292CFB6800B8AB26 /* GalbiJimTableViewCell.swift */; };
 		63A1D272292F8C0900DC5626 /* SubMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A1D271292F8C0900DC5626 /* SubMainCollectionViewCell.swift */; };
+		63A6EEF0295852D900E442EA /* PopUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A6EEEF295852D900E442EA /* PopUpView.storyboard */; };
+		63A6EEF2295852E500E442EA /* PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6EEF1295852E500E442EA /* PopUpView.swift */; };
 		63E234EC292D27D700511B20 /* SoupTitleImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E234EB292D27D700511B20 /* SoupTitleImageTableViewCell.swift */; };
 		63E234EF292DE8AB00511B20 /* MainImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E234EE292DE8AB00511B20 /* MainImageCell.swift */; };
 		63E234F1292DE8D800511B20 /* ExplanationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E234F0292DE8D800511B20 /* ExplanationCell.swift */; };
@@ -104,6 +106,8 @@
 		63021F30292CFB5E00B8AB26 /* GalbiJimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalbiJimViewController.swift; sourceTree = "<group>"; };
 		63021F32292CFB6800B8AB26 /* GalbiJimTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalbiJimTableViewCell.swift; sourceTree = "<group>"; };
 		63A1D271292F8C0900DC5626 /* SubMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMainCollectionViewCell.swift; sourceTree = "<group>"; };
+		63A6EEEF295852D900E442EA /* PopUpView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUpView.storyboard; sourceTree = "<group>"; };
+		63A6EEF1295852E500E442EA /* PopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpView.swift; sourceTree = "<group>"; };
 		63E234EB292D27D700511B20 /* SoupTitleImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoupTitleImageTableViewCell.swift; sourceTree = "<group>"; };
 		63E234EE292DE8AB00511B20 /* MainImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImageCell.swift; sourceTree = "<group>"; };
 		63E234F0292DE8D800511B20 /* ExplanationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationCell.swift; sourceTree = "<group>"; };
@@ -221,6 +225,7 @@
 		63021EEC292BAB7500B8AB26 /* Miso */ = {
 			isa = PBXGroup;
 			children = (
+				63A6EEEE295852AB00E442EA /* Timer */,
 				63E7D7B3292F210400D1BEA6 /* MisoCell */,
 				63021EDF292B861300B8AB26 /* MisoStewViewController.swift */,
 				63021EE3292B89BF00B8AB26 /* Miso.storyboard */,
@@ -309,6 +314,15 @@
 			);
 			name = GalbiJim;
 			path = "갈비찜";
+			sourceTree = "<group>";
+		};
+		63A6EEEE295852AB00E442EA /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				63A6EEEF295852D900E442EA /* PopUpView.storyboard */,
+				63A6EEF1295852E500E442EA /* PopUpView.swift */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 		63E234ED292DE89000511B20 /* KimchiCell */ = {
@@ -424,6 +438,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63A6EEF0295852D900E442EA /* PopUpView.storyboard in Resources */,
 				63021EC02929DD0100B8AB26 /* LaunchScreen.storyboard in Resources */,
 				63021ED0292A109B00B8AB26 /* Soup.storyboard in Resources */,
 				63021EBD2929DD0100B8AB26 /* Assets.xcassets in Resources */,
@@ -468,6 +483,7 @@
 				63021ED3292A11F700B8AB26 /* SteamedViewController.swift in Sources */,
 				63021EE7292BA41500B8AB26 /* FirstExplanationCell.swift in Sources */,
 				63E7D7B7292F214000D1BEA6 /* MisoExplanationCell.swift in Sources */,
+				63A6EEF2295852E500E442EA /* PopUpView.swift in Sources */,
 				63E234EC292D27D700511B20 /* SoupTitleImageTableViewCell.swift in Sources */,
 				63021F20292CD29700B8AB26 /* EggCustardViewController.swift in Sources */,
 				63021F16292C904900B8AB26 /* SeaweedViewController.swift in Sources */,
