@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Pop Up View-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PopUpView" id="Y6W-OH-hqX" customClass="PopUpView" customModule="hemgRecipe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kiy-BJ-C7u">
-                                <rect key="frame" x="0.0" y="427" width="390" height="417"/>
+                                <rect key="frame" x="0.0" y="467" width="390" height="377"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5d-Dv-r63">
                                         <rect key="frame" x="80" y="110" width="230" height="60"/>
@@ -33,29 +33,47 @@
                                         <rect key="frame" x="30" y="100" width="330" height="216"/>
                                     </datePicker>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="yJ3-Pf-ien">
-                                        <rect key="frame" x="100" y="332.66666666666663" width="190" height="34.333333333333314"/>
+                                        <rect key="frame" x="100" y="292.66666666666663" width="190" height="34.333333333333314"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0k4-0u-jO3">
                                                 <rect key="frame" x="0.0" y="0.0" width="55" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="취소"/>
+                                                <connections>
+                                                    <action selector="tapCancelButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1UD-lj-Oqr"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTo-fY-YVA">
                                                 <rect key="frame" x="135" y="0.0" width="55" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="시작"/>
+                                                <connections>
+                                                    <action selector="tapToggleButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mY3-nN-Xwm"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fe-jM-QG5">
+                                        <rect key="frame" x="5" y="5" width="102" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="타이머 닫기"/>
+                                        <connections>
+                                            <action selector="backButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="WoX-zF-GXd"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="PY7-MS-LZG" firstAttribute="leading" secondItem="kiy-BJ-C7u" secondAttribute="leading" constant="30" id="1g6-ru-9gA"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Fe-jM-QG5" secondAttribute="trailing" constant="283" id="BHR-C1-cwS"/>
                                     <constraint firstAttribute="trailing" secondItem="yJ3-Pf-ien" secondAttribute="trailing" constant="100" id="CC9-fm-s9o"/>
                                     <constraint firstAttribute="trailing" secondItem="s5d-Dv-r63" secondAttribute="trailing" constant="80" id="EFe-61-AhE"/>
+                                    <constraint firstItem="8Fe-jM-QG5" firstAttribute="leading" secondItem="kiy-BJ-C7u" secondAttribute="leading" constant="5" id="Gzj-yl-u3R"/>
                                     <constraint firstItem="yJ3-Pf-ien" firstAttribute="leading" secondItem="kiy-BJ-C7u" secondAttribute="leading" constant="100" id="Kbo-w8-tCt"/>
                                     <constraint firstItem="s5d-Dv-r63" firstAttribute="leading" secondItem="kiy-BJ-C7u" secondAttribute="leading" constant="80" id="NrA-kW-d6M"/>
+                                    <constraint firstItem="8Fe-jM-QG5" firstAttribute="top" secondItem="kiy-BJ-C7u" secondAttribute="top" constant="5" id="Qki-x2-oeL"/>
                                     <constraint firstItem="Ogc-Fg-TYn" firstAttribute="leading" secondItem="kiy-BJ-C7u" secondAttribute="leading" constant="120" id="ShI-VQ-elq"/>
+                                    <constraint firstItem="PY7-MS-LZG" firstAttribute="top" secondItem="8Fe-jM-QG5" secondAttribute="bottom" constant="60.670000000000002" id="W3y-Yh-RU2"/>
                                     <constraint firstItem="PY7-MS-LZG" firstAttribute="top" secondItem="kiy-BJ-C7u" secondAttribute="top" constant="100" id="fEa-TO-bVW"/>
                                     <constraint firstAttribute="trailing" secondItem="Ogc-Fg-TYn" secondAttribute="trailing" constant="120" id="hng-Ot-q1v"/>
                                     <constraint firstAttribute="trailing" secondItem="PY7-MS-LZG" secondAttribute="trailing" constant="30" id="mvU-Ni-Rbj"/>
@@ -70,10 +88,17 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="kiy-BJ-C7u" secondAttribute="trailing" id="3Oa-3o-RH0"/>
                             <constraint firstAttribute="bottom" secondItem="kiy-BJ-C7u" secondAttribute="bottom" id="LRe-e9-Z7j"/>
-                            <constraint firstItem="kiy-BJ-C7u" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="380" id="nC3-RX-yng"/>
+                            <constraint firstItem="kiy-BJ-C7u" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="420" id="nC3-RX-yng"/>
                             <constraint firstItem="kiy-BJ-C7u" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vPt-SU-JuO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="0k4-0u-jO3" id="ts3-Am-oqd"/>
+                        <outlet property="datePicker" destination="PY7-MS-LZG" id="p7N-37-vXM"/>
+                        <outlet property="progreeView" destination="Ogc-Fg-TYn" id="jBj-JD-23L"/>
+                        <outlet property="timeLabel" destination="s5d-Dv-r63" id="Uy7-e3-Fnd"/>
+                        <outlet property="toggleButton" destination="MTo-fY-YVA" id="Hzw-pW-Y9G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

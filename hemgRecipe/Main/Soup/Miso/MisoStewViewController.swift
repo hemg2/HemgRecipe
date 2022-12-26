@@ -21,6 +21,11 @@ class MisoStewViewController: UIViewController {
     }
     
     
+    @IBAction func timer(_ sender: Any) {
+        self.addTaget()
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -127,3 +132,13 @@ extension MisoStewViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
+
+extension MisoStewViewController: addPopUpViewButton {
+    func addTaget() {
+        let storyboacrd = UIStoryboard.init(name: "PopUpView", bundle: nil)
+        let popUpVC = storyboacrd.instantiateViewController(withIdentifier: "PopUpView") as! PopUpView
+        popUpVC.modalPresentationStyle = .overCurrentContext
+        popUpVC.modalTransitionStyle = .crossDissolve
+        self.present(popUpVC, animated: true)
+    }
+}

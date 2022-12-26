@@ -185,7 +185,11 @@
                                     <action selector="shared:" destination="gul-qd-UEs" id="CRw-a6-bAE"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Item" image="timer" catalog="system" id="kXC-wB-TZ4"/>
+                            <barButtonItem title="Item" image="timer" catalog="system" id="kXC-wB-TZ4">
+                                <connections>
+                                    <action selector="timer:" destination="gul-qd-UEs" id="FRU-ai-yrK"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                 </viewController>
